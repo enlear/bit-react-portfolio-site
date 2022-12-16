@@ -5,16 +5,16 @@ import { Chip } from '@showoff/design.widgets.chip';
 import { Heading } from '@showoff/design.widgets.heading';
 import { Typography } from '@showoff/design.widgets.typography';
 import { useProject } from '@showoff/personal-portfolio.hooks.use-project';
-import { Container, Grid } from '@mui/material';
+import { Container, Grid, GridProps } from '@mui/material';
 import { Box, CardMedia } from '@mui/material';
 import { SocialLinks } from '@teambit/people.ui.social-links';
 import React from 'react';
 import { useParams } from 'react-router-dom';
 
 export type IndividualProjectProps = {
-};
+} & GridProps;
 
-export function IndividualProject({ }: IndividualProjectProps) {
+export function IndividualProject(props: IndividualProjectProps) {
   const { id } = useParams();
   const { project } = useProject({ id: id as string })
 
@@ -29,8 +29,10 @@ export function IndividualProject({ }: IndividualProjectProps) {
   }
 
   return (
-    <div>
-      <Grid container>
+    <>
+      <Grid container
+        {...props}
+      >
         <Grid item
           xs={4}
           md={4}
@@ -139,6 +141,6 @@ export function IndividualProject({ }: IndividualProjectProps) {
           />
         </Margin>
       </Container>
-    </div >
+    </ >
   );
 }

@@ -7,7 +7,7 @@ export type TextFieldProps = {
 export function TextField(props: TextFieldProps) {
   return (
     <MUITextField
-      {...props && { ...props }}
+      {...props}
     />
   );
 }

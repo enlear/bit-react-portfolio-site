@@ -1,22 +1,20 @@
 import { Margin, MarginType } from '@showoff/design.layouts.margin'
-import { Breadcrumb } from '@showoff/design.widgets.breadcrumb';
+import { Breadcrumb, BreadcrumbProps } from '@showoff/design.widgets.breadcrumb';
 import { Grid, Link } from '@mui/material';
 import React from 'react';
 import { useProjects } from '@showoff/personal-portfolio.hooks.use-projects';
 import { Card } from '@showoff/design.widgets.card';
 
 export type ProjectsProps = {
-};
+} & BreadcrumbProps;
 
-export function Projects({ }: ProjectsProps) {
+export function Projects({ crumbs = [{ crumb: 'projects.' }] }: ProjectsProps) {
   const { projects } = useProjects();
 
   return (
     <div>
       <Breadcrumb
-        crumbs={[
-          { crumb: 'projects.' }
-        ]}
+        crumbs={crumbs}
       />
       <Margin
         mt={MarginType.LARGE}

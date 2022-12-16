@@ -2,13 +2,9 @@ import { SizeableBox } from '@showoff/design.widgets.sizeable-box';
 import { Typography } from '@showoff/design.widgets.typography';
 import { Box } from '@mui/material';
 import React from 'react';
+import { SizeableBoxProps } from '@showoff/design.widgets.sizeable-box';
 
 export type WorkItemProps = {
-  /**
-   * the size of the box.
-   */
-  size: 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10;
-
   /**
    * the designation of the work item.
    */
@@ -23,12 +19,12 @@ export type WorkItemProps = {
    * period of the work item.
    */
   period: string;
-};
+} & SizeableBoxProps;
 
-export function WorkItem({ company, designation, period, size }: WorkItemProps) {
+export function WorkItem({ company, designation, period, ...rest }: WorkItemProps) {
   return (
     <SizeableBox
-      size={size}
+      {...rest}
     >
       <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap' }}>
         <Box>

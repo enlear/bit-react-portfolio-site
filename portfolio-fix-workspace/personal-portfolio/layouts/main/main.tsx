@@ -1,8 +1,8 @@
+import React, { ReactNode } from 'react';
 import { Appbar } from '@showoff/personal-portfolio.navigation.appbar';
 import { Appfooter } from '@showoff/personal-portfolio.navigation.appfooter';
 import { Box, Container } from '@mui/material';
 import { styled } from '@mui/material';
-import React, { ReactNode } from 'react';
 
 export type MainProps = {
   /**
@@ -11,6 +11,10 @@ export type MainProps = {
   children?: ReactNode;
 };
 
+/**
+ * In MUI it is recommend to use a styled component instead of a class component when dealing with
+ * large styling. The `MainRoot` component contains the styling needed for the main layout.
+ */
 const MainRoot = styled('div')(({ theme }) => ({
   backgroundColor: theme.palette.background.default,
   color: theme.palette.text.primary,

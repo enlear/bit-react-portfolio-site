@@ -1,25 +1,27 @@
-import React, { } from 'react';
+import React from 'react';
 import { Icons } from '@showoff/personal-portfolio.ui.social.icons';
-import { Box, Grid } from '@mui/material';
 import { MarginType, Margin } from '@showoff/design.layouts.margin';
 import { LinkText } from '@showoff/design.navigation.link-text';
 import { Breadcrumb } from '@showoff/design.widgets.breadcrumb';
 import { Typography } from '@showoff/design.widgets.typography';
 import { ContactForm, ContactFormType } from '@showoff/contact-me.ui.contact-form';
 import { Artwork } from '@showoff/contact-me.ui.artwork';
+import { Box, Grid, GridProps } from '@mui/material';
 
 export type ContactProps = {
-};
+} & GridProps;
 
-export function Contact({ }: ContactProps) {
+
+export function Contact(props: ContactProps) {
 
   const handleFormSubmit = async (values: ContactFormType) => {
-    console.log(values);
+    // TODO: Implement form submit
   }
 
   return (
     <Grid container
       spacing={5}
+      {...props}
     >
       <Grid item
         xs={12}

@@ -23,21 +23,19 @@ export type MarginProps = {
    */
   mb?: MarginType;
 
-  /**
-   * the custom styling to be applied
-   */
-  style?: React.CSSProperties;
-};
+} & React.HTMLAttributes<HTMLDivElement>;
 
-export function Margin({ mt, mb, children, style }: MarginProps) {
+export function Margin({ mt, mb, children, style, ...rest }: MarginProps) {
   return (
     <div style={{
       marginTop: mt,
       marginBottom: mb,
       width: '100%',
-      ...style && { ...style },
-    }}>
+      ...style
+    }}
+      {...rest}
+    >
       {children}
-    </div>
+    </div >
   );
 }

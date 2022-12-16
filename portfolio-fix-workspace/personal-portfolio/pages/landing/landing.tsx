@@ -11,8 +11,12 @@ import React from 'react';
 export type LandingProps = {
 };
 
-const PersonReachSection = () => (
-  <section>
+type PersonReachSectionProps = {} & React.HTMLAttributes<HTMLElement>;
+
+const PersonReachSection = (props: PersonReachSectionProps) => (
+  <section
+    {...props}
+  >
     <Margin
       mt={MarginType.MEDIUM}
     >

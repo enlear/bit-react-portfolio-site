@@ -1,7 +1,6 @@
-import { Project, ProjectKind } from '@showoff/personal-portfolio.entities.project';
+import { useEffect, useState } from 'react';
+import { Project } from '@showoff/personal-portfolio.entities.project';
 import { sampleProjects } from '@showoff/personal-portfolio.mocks.sample-projects';
-import { useEffect } from 'react';
-import { useState } from 'react';
 
 export function useProjects() {
   const [projects, setProjects] = useState<Project[]>([]);

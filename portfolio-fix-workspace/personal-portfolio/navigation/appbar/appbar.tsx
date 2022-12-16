@@ -8,7 +8,7 @@ import { Link } from '@mui/material';
 export type AppbarProps = {
 };
 
-export function Appbar({ }: AppbarProps) {
+export function Appbar(props: AppbarProps) {
   return (
     <SettingsConsumer>
       {({ theme, toggleTheme }) => (

@@ -28,10 +28,10 @@ const workItems: WorkItemProps[] = [
 export type HistoryProps = {
 };
 
-export function History({ }: HistoryProps) {
+export function History(props: HistoryProps) {
   const smDown = useMediaQuery((theme: Theme) => theme.breakpoints.down('sm'));
   return (
-    <div>
+    <>
       {workItems.map((workItem, index) => (
         <Margin
           key={index}
@@ -44,6 +44,6 @@ export function History({ }: HistoryProps) {
           />
         </Margin>
       ))}
-    </div>
+    </>
   );
 }

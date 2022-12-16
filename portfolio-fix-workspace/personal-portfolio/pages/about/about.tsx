@@ -5,20 +5,21 @@ import { Breadcrumb } from '@showoff/design.widgets.breadcrumb';
 import { Heading } from '@showoff/design.widgets.heading';
 import { Typography } from '@showoff/design.widgets.typography';
 import { Picture } from '@showoff/personal-portfolio.ui.person.picture';
-import { Grid } from '@mui/material';
+import { Grid, GridProps } from '@mui/material';
 import { History } from '@showoff/personal-portfolio.ui.about.history';
 import { TextIcon } from '@showoff/design.widgets.text-icon';
 import Download from '@mui/icons-material/Download';
 
 export type AboutProps = {
-};
+} & GridProps;
 
-export function About({ }: AboutProps) {
+export function About(props: AboutProps) {
   return (
     <>
       <Grid
         container
         spacing={5}
+        {...props}
       >
         <Grid item xs={12}
           md={6}

@@ -1,5 +1,5 @@
 import { Artwork } from '@showoff/personal-portfolio.ui.person.artwork';
-import { Box, Theme, useMediaQuery } from '@mui/material';
+import { Box, BoxProps, Theme, useMediaQuery } from '@mui/material';
 import React from 'react';
 
 export type PictureProps = {
@@ -7,13 +7,15 @@ export type PictureProps = {
    * the picture URL to show
    */
   pictureUrl: string
-};
+} & BoxProps;
 
-export function Picture({ pictureUrl }: PictureProps) {
+export function Picture({ pictureUrl, sx, ...rest }: PictureProps) {
   const smDown = useMediaQuery((theme: Theme) => theme.breakpoints.down('sm'));
 
   return (
-    <Box sx={{ display: 'flex', width: '100%' }}>
+    <Box sx={{ display: 'flex', width: '100%', ...sx }}
+      {...rest}
+    >
       <Box sx={{
         position: 'relative',
         top: 30,

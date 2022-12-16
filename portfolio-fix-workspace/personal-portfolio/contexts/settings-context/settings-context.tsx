@@ -1,7 +1,5 @@
-import React, { ReactNode } from 'react';
-import { useState } from 'react';
-import { useEffect } from 'react';
-import { createContext } from 'react';
+import React, { ReactNode, useState, useEffect, createContext } from 'react';
+import { useLocalStorage } from '@showoff/personal-portfolio.hooks.use-local-storage';
 import { PortfolioSiteSettings } from './settings.type';
 
 const SETTINGS_KEY = 'site-settings';
@@ -31,23 +29,18 @@ const SettingsContext = createContext<SettingsContextType>({
 
 export function SettingsProvider({ children }: SettingsContextProps) {
   const [settings, setSettings] = useState<PortfolioSiteSettings>(initialState);
+  const { initializeSettings, saveSettings } = useLocalStorage();
 
   useEffect(() => {
-    const initializeSettings = () => {
-      const settings = localStorage.getItem(SETTINGS_KEY);
-      if (settings) {
-        setSettings(JSON.parse(settings));
-      } else {
-        setSettings(initialState);
-      }
-    }
-    initializeSettings();
+    const retrievedSettings = initializeSettings();
+    setSettings(retrievedSettings || initialState);
   }, []);
 
   const toggleTheme = () => {
     const newTheme = settings.theme === 'light' ? 'dark' : 'light';
-    setSettings({ ...settings, theme: newTheme });
-    localStorage.setItem(SETTINGS_KEY, JSON.stringify({ ...settings, theme: newTheme }));
+    const newSettings: PortfolioSiteSettings = { ...settings, theme: newTheme };
+    saveSettings(newSettings);
+    setSettings(newSettings);
   };
 
   return (

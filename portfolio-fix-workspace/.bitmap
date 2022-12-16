@@ -27,6 +27,19 @@
         "mainFile": "index.ts",
         "rootDir": "personal-portfolio/contexts/settings-context"
     },
+    "hooks/use-local-storage": {
+        "scope": "",
+        "version": "",
+        "defaultScope": "showoff.personal-portfolio",
+        "mainFile": "index.ts",
+        "rootDir": "personal-portfolio/hooks/use-local-storage",
+        "config": {
+            "teambit.harmony/node": {},
+            "teambit.envs/envs": {
+                "env": "teambit.harmony/node"
+            }
+        }
+    },
     "hooks/use-projects": {
         "scope": "showoff.personal-portfolio",
         "version": "0.0.2",
@@ -134,6 +147,12 @@
         "version": "0.0.4",
         "mainFile": "index.ts",
         "rootDir": "personal-portfolio/ui/person/picture"
+    },
+    "widgets/sizeable-box": {
+        "scope": "showoff.design",
+        "version": "0.0.1",
+        "mainFile": "index.ts",
+        "rootDir": "design/widgets/sizeable-box"
     },
     "widgets/work-item": {
         "scope": "showoff.design",
