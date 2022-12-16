@@ -12,5 +12,5 @@ export function LightTheme() {
         Hello, Light Theme.
       </Button>
     </ThemeProvider>
-  )
+  );
 }

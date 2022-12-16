@@ -5,28 +5,23 @@ import { lightTheme } from '@showoff/design.theme.light-theme';
 import { ThemeProvider } from '@showoff/design.theme.theme-provider';
 import { Contact } from './contact';
 
-export const LightContactPage = () => {
-  return (
-    <ThemeProvider
-      theme={lightTheme()}
+export const LightContactPage = () => (
+  <ThemeProvider
+    theme={lightTheme()}
+  >
+    <Main
     >
-      <Main
-      >
-        <Contact />
-      </Main>
-    </ThemeProvider>
-  );
-}
+      <Contact />
+    </Main>
+  </ThemeProvider>
+);
 
-export const DarkContactPage = () => {
-  return (
-    <ThemeProvider
-      theme={darkTheme()}
-    >
-      <Main>
-        <Contact />
-      </Main>
-    </ThemeProvider>
-  );
-}
-
+export const DarkContactPage = () => (
+  <ThemeProvider
+    theme={darkTheme()}
+  >
+    <Main>
+      <Contact />
+    </Main>
+  </ThemeProvider>
+);

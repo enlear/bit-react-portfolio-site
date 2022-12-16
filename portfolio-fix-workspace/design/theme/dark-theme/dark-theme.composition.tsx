@@ -3,16 +3,14 @@ import { ThemeProvider } from '@showoff/design.theme.theme-provider';
 import { Button } from '@mui/material';
 import { darkTheme } from './dark-theme';
 
-export const DarkTheme = () => {
-  return (
-    <ThemeProvider
-      theme={darkTheme()}
+export const DarkTheme = () => (
+  <ThemeProvider
+    theme={darkTheme()}
+  >
+    <Button
+      variant="contained"
     >
-      <Button
-        variant="contained"
-      >
-        Hello, Dark Theme.
-      </Button>
-    </ThemeProvider>
-  );
-};
+      Hello, Dark Theme.
+    </Button>
+  </ThemeProvider>
+);

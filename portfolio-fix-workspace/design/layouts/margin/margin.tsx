@@ -1,10 +1,10 @@
 import React, { ReactNode } from 'react';
 
 export enum MarginType {
-  SMALL = "12px",
-  MEDIUM = "24px",
-  LARGE = "56px",
-  EXTRA_LARGE = "96px",
+  SMALL = '12px',
+  MEDIUM = '24px',
+  LARGE = '56px',
+  EXTRA_LARGE = '96px',
 }
 
 export type MarginProps = {
@@ -25,13 +25,15 @@ export type MarginProps = {
 
 } & React.HTMLAttributes<HTMLDivElement>;
 
-export function Margin({ mt, mb, children, style, ...rest }: MarginProps) {
+export function Margin({
+  mt, mb, children, style, ...rest
+}: MarginProps) {
   return (
     <div style={{
       marginTop: mt,
       marginBottom: mb,
       width: '100%',
-      ...style
+      ...style,
     }}
       {...rest}
     >

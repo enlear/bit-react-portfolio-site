@@ -1,6 +1,5 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import { useTheme } from '@mui/material';
-import { useMemo } from 'react';
 
 export type ArtworkProps = {
 };

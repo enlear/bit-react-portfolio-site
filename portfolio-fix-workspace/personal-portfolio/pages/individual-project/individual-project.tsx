@@ -5,8 +5,10 @@ import { Chip } from '@showoff/design.widgets.chip';
 import { Heading } from '@showoff/design.widgets.heading';
 import { Typography } from '@showoff/design.widgets.typography';
 import { useProject } from '@showoff/personal-portfolio.hooks.use-project';
-import { Container, Grid, GridProps } from '@mui/material';
-import { Box, CardMedia } from '@mui/material';
+import {
+  Container, Grid, GridProps, Box, CardMedia,
+} from '@mui/material';
+
 import { SocialLinks } from '@teambit/people.ui.social-links';
 import React from 'react';
 import { useParams } from 'react-router-dom';
@@ -16,16 +18,16 @@ export type IndividualProjectProps = {
 
 export function IndividualProject(props: IndividualProjectProps) {
   const { id } = useParams();
-  const { project } = useProject({ id: id as string })
+  const { project } = useProject({ id: id as string });
 
   if (!project) {
     return (
       <Box sx={{ display: 'flex', my: 15, justifyContent: 'center' }}>
         <Heading
-          value='Project not found'
+          value="Project not found"
         />
       </Box>
-    )
+    );
   }
 
   return (
@@ -38,9 +40,9 @@ export function IndividualProject(props: IndividualProjectProps) {
           md={4}
         >
           <LinkText
-            linkText='Back to Projects'
-            url='/projects'
-            color='secondary'
+            linkText="Back to Projects"
+            url="/projects"
+            color="secondary"
           />
         </Grid>
         <Grid item
@@ -58,38 +60,38 @@ export function IndividualProject(props: IndividualProjectProps) {
         />
       </Grid>
       <Container
-        maxWidth='md'
+        maxWidth="md"
       >
         <Margin
           mt={MarginType.LARGE}
         >
           <Box sx={{ display: 'flex', justifyContent: 'center' }}>
             <CardMedia
-              component='img'
+              component="img"
               image={project.image}
               sx={{
                 height: '496px',
                 borderRadius: '8px',
-                width: '100%'
+                width: '100%',
               }}
             />
           </Box>
         </Margin>
       </Container>
       <Container
-        maxWidth='sm'
+        maxWidth="sm"
       >
         <Margin
           mt={MarginType.LARGE}
         >
           <Breadcrumb
             crumbs={[
-              { crumb: 'Description' }
+              { crumb: 'Description' },
             ]}
             typographyProps={{
               color: 'text.primary',
               variant: 'body1',
-              fontSize: 18
+              fontSize: 18,
             }}
           />
           <Typography>
@@ -102,15 +104,17 @@ export function IndividualProject(props: IndividualProjectProps) {
           >
             <Breadcrumb
               crumbs={[
-                { crumb: 'Attributes' }
+                { crumb: 'Attributes' },
               ]}
               typographyProps={{
                 color: 'text.primary',
                 variant: 'body1',
-                fontSize: 18
+                fontSize: 18,
               }}
             />
-            <Box sx={{ display: 'flex', gap: 2, mt: 1, flexWrap: 'wrap' }}>
+            <Box sx={{
+              display: 'flex', gap: 2, mt: 1, flexWrap: 'wrap',
+            }}>
               {project.tags.map((tag) => (
                 <Chip
                   content={tag}
@@ -126,12 +130,12 @@ export function IndividualProject(props: IndividualProjectProps) {
             links={[
               ...project.links.github ? [{
                 name: 'github',
-                url: project.links.github
+                url: project.links.github,
               }] : [],
               ...project.links.website ? [{
                 name: 'website',
-                url: project.links.website
-              }] : []
+                url: project.links.website,
+              }] : [],
             ] as []}
             style={{
               display: 'flex',

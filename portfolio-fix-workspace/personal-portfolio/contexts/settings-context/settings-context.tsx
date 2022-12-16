@@ -1,4 +1,6 @@
-import React, { ReactNode, useState, useEffect, createContext } from 'react';
+import React, {
+  ReactNode, useState, useEffect, createContext,
+} from 'react';
 import { useLocalStorage } from '@showoff/personal-portfolio.hooks.use-local-storage';
 import { PortfolioSiteSettings } from './settings.type';
 
@@ -16,16 +18,16 @@ const initialState: PortfolioSiteSettings = {
    * use dark mode by default.
    */
   theme: 'dark',
-}
+};
 
 type SettingsContextType = {
   toggleTheme: () => void;
-} & PortfolioSiteSettings
+} & PortfolioSiteSettings;
 
 const SettingsContext = createContext<SettingsContextType>({
   ...initialState,
-  toggleTheme: () => { }
-})
+  toggleTheme: () => { },
+});
 
 export function SettingsProvider({ children }: SettingsContextProps) {
   const [settings, setSettings] = useState<PortfolioSiteSettings>(initialState);
@@ -47,7 +49,7 @@ export function SettingsProvider({ children }: SettingsContextProps) {
     <SettingsContext.Provider
       value={{
         theme: settings.theme,
-        toggleTheme
+        toggleTheme,
       }}
     >
       {children}

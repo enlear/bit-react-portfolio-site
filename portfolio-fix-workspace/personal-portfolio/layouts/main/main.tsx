@@ -1,8 +1,7 @@
 import React, { ReactNode } from 'react';
 import { Appbar } from '@showoff/personal-portfolio.navigation.appbar';
 import { Appfooter } from '@showoff/personal-portfolio.navigation.appfooter';
-import { Box, Container } from '@mui/material';
-import { styled } from '@mui/material';
+import { Box, Container, styled } from '@mui/material';
 
 export type MainProps = {
   /**
@@ -22,7 +21,7 @@ const MainRoot = styled('div')(({ theme }) => ({
   height: '100%',
   display: 'flex',
   flexDirection: 'column',
-  paddingTop: 68
+  paddingTop: 68,
 }));
 
 export function Main({ children }: MainProps) {
@@ -30,19 +29,19 @@ export function Main({ children }: MainProps) {
     <MainRoot>
       <Appbar />
       <Container
-        maxWidth='lg'
+        maxWidth="lg"
         sx={{ paddingTop: '68px', height: '100%' }}
       >
         <main
           style={{
-            flexGrow: 1
+            flexGrow: 1,
           }}
         >
           {children}
         </main>
       </Container>
       <Container
-        maxWidth='lg'
+        maxWidth="lg"
       >
         <Box sx={{ pt: 10 }}>
           <Appfooter />

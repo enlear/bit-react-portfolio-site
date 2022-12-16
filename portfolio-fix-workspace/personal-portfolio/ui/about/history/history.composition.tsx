@@ -4,22 +4,18 @@ import { ThemeProvider } from '@showoff/design.theme.theme-provider';
 import React from 'react';
 import { History } from './history';
 
-export const LightHistory = () => {
-  return (
-    <ThemeProvider
-      theme={lightTheme()}
-    >
-      <History />
-    </ThemeProvider>
-  );
-}
+export const LightHistory = () => (
+  <ThemeProvider
+    theme={lightTheme()}
+  >
+    <History />
+  </ThemeProvider>
+);
 
-export const DarkHistory = () => {
-  return (
-    <ThemeProvider
-      theme={darkTheme()}
-    >
-      <History />
-    </ThemeProvider>
-  );
-}
+export const DarkHistory = () => (
+  <ThemeProvider
+    theme={darkTheme()}
+  >
+    <History />
+  </ThemeProvider>
+);

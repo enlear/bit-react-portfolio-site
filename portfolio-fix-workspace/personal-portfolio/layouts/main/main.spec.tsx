@@ -13,4 +13,3 @@ it('should render content with correct text', () => {
   const rendered = getByText('Hello World');
   expect(rendered).toBeTruthy();
 });
-

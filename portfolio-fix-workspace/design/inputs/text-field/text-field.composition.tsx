@@ -1,8 +1,8 @@
 import { darkTheme } from '@showoff/design.theme.dark-theme';
 import { lightTheme } from '@showoff/design.theme.light-theme';
 import { ThemeProvider } from '@showoff/design.theme.theme-provider';
-import React from 'react';
-import { useState } from 'react';
+import React, { useState } from 'react';
+
 import { TextField } from './text-field';
 
 export const BasicTextField = () => {
@@ -18,7 +18,7 @@ export const BasicTextField = () => {
       />
     </ThemeProvider>
   );
-}
+};
 
 export const DarkTextField = () => {
   const [value, setValue] = useState<string>('');
@@ -33,5 +33,4 @@ export const DarkTextField = () => {
       />
     </ThemeProvider>
   );
-}
-
+};

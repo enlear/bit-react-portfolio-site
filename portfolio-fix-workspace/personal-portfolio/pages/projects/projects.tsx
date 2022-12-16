@@ -1,4 +1,4 @@
-import { Margin, MarginType } from '@showoff/design.layouts.margin'
+import { Margin, MarginType } from '@showoff/design.layouts.margin';
 import { Breadcrumb, BreadcrumbProps } from '@showoff/design.widgets.breadcrumb';
 import { Grid, Link } from '@mui/material';
 import React from 'react';
@@ -6,7 +6,7 @@ import { useProjects } from '@showoff/personal-portfolio.hooks.use-projects';
 import { Card } from '@showoff/design.widgets.card';
 
 export type ProjectsProps = {
-} & BreadcrumbProps;
+} & Partial<BreadcrumbProps>;
 
 export function Projects({ crumbs = [{ crumb: 'projects.' }] }: ProjectsProps) {
   const { projects } = useProjects();

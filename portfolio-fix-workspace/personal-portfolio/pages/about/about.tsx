@@ -39,7 +39,7 @@ export function About(props: AboutProps) {
           >
             <Heading
               sx={{ color: (theme) => theme.palette.primary.main, lineHeight: 1.5, display: 'inline' }}
-              value='I’m Tobias Sundberg, a Creative web developer UX Engineer and a designOps. Working remotely from sunny Dublin, Ireland.'
+              value="I’m Tobias Sundberg, a Creative web developer UX Engineer and a designOps. Working remotely from sunny Dublin, Ireland."
             />
           </Margin>
           <Margin
@@ -70,15 +70,15 @@ export function About(props: AboutProps) {
           md={6}
         >
           <Picture
-            pictureUrl={"https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80"}
+            pictureUrl={'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80'}
           />
         </Grid>
       </Grid >
       <div>
         <Margin mt={MarginType.LARGE}>
           <LinkText
-            linkText='Check my projects.'
-            url='/projects'
+            linkText="Check my projects."
+            url="/projects"
           />
         </Margin>
         <Margin mt={MarginType.EXTRA_LARGE}>
@@ -95,7 +95,7 @@ export function About(props: AboutProps) {
           >
             <TextIcon
               icon={<Download />}
-              text='Download CV'
+              text="Download CV"
             />
           </Margin>
         </Margin>

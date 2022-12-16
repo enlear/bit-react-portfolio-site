@@ -6,25 +6,22 @@ import { Heading } from '@showoff/design.widgets.heading';
 import React from 'react';
 import { SettingsProvider, SettingsConsumer } from './settings-context';
 
-export const BasicSettingsContext = () => {
-
-  return (
-    <SettingsProvider>
-      <SettingsConsumer>
-        {({ theme, toggleTheme }) => (
-          <ThemeProvider
-            theme={theme === 'dark' ? darkTheme() : lightTheme()}
-          >
-            <Heading
-              value={'Settings Context'}
-            />
-            <Button
-              value={'Toggle Theme'}
-              onClick={toggleTheme}
-            />
-          </ThemeProvider>
-        )}
-      </SettingsConsumer>
-    </SettingsProvider>
-  );
-}
+export const BasicSettingsContext = () => (
+  <SettingsProvider>
+    <SettingsConsumer>
+      {({ theme, toggleTheme }) => (
+        <ThemeProvider
+          theme={theme === 'dark' ? darkTheme() : lightTheme()}
+        >
+          <Heading
+            value={'Settings Context'}
+          />
+          <Button
+            value={'Toggle Theme'}
+            onClick={toggleTheme}
+          />
+        </ThemeProvider>
+      )}
+    </SettingsConsumer>
+  </SettingsProvider>
+);

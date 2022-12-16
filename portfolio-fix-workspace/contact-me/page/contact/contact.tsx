@@ -11,12 +11,10 @@ import { Box, Grid, GridProps } from '@mui/material';
 export type ContactProps = {
 } & GridProps;
 
-
 export function Contact(props: ContactProps) {
-
   const handleFormSubmit = async (values: ContactFormType) => {
     // TODO: Implement form submit
-  }
+  };
 
   return (
     <Grid container
@@ -30,7 +28,7 @@ export function Contact(props: ContactProps) {
       >
         <Breadcrumb
           crumbs={[
-            { crumb: 'Contact.' }
+            { crumb: 'Contact.' },
           ]}
         />
         <Margin
@@ -54,12 +52,12 @@ export function Contact(props: ContactProps) {
         >
           <Box>
             <LinkText
-              linkText='Go to my homepage'
-              url='/'
+              linkText="Go to my homepage"
+              url="/"
               fontSize={16}
               fontWeight={400}
               iconSize={'medium'}
-              color='secondary'
+              color="secondary"
             />
           </Box>
         </Margin>
@@ -89,7 +87,7 @@ export function Contact(props: ContactProps) {
           height: '75%',
           width: '75%',
           ml: 15,
-          mt: 2
+          mt: 2,
         }}>
           <Artwork />
         </Box>

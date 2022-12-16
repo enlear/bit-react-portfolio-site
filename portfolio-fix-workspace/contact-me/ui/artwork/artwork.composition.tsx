@@ -4,23 +4,18 @@ import { ThemeProvider } from '@showoff/design.theme.theme-provider';
 import React from 'react';
 import { Artwork } from './artwork';
 
-export const LightArtwork = () => {
-  return (
+export const LightArtwork = () => (
     <ThemeProvider
       theme={lightTheme()}
     >
       <Artwork />
     </ThemeProvider>
-  );
-}
+);
 
-export const DarkArtwork = () => {
-  return (
+export const DarkArtwork = () => (
     <ThemeProvider
       theme={darkTheme()}
     >
       <Artwork />
     </ThemeProvider>
-  );
-}
-
+);

@@ -1,7 +1,7 @@
 import { Theme, useMediaQuery } from '@mui/material';
 import { Margin, MarginType } from '@showoff/design.layouts.margin';
-import { WorkItemProps } from '@showoff/design.widgets.work-item';
-import { WorkItem } from '@showoff/design.widgets.work-item';
+import { WorkItemProps, WorkItem } from '@showoff/design.widgets.work-item';
+
 import React from 'react';
 
 const workItems: WorkItemProps[] = [
@@ -22,8 +22,8 @@ const workItems: WorkItemProps[] = [
     designation: 'UX Engineer',
     period: '3 Years',
     size: 3,
-  }
-]
+  },
+];
 
 export type HistoryProps = {
 };
@@ -39,7 +39,7 @@ export function History(props: HistoryProps) {
         >
           <WorkItem {...workItem}
             {...smDown && {
-              size: 10
+              size: 10,
             }}
           />
         </Margin>

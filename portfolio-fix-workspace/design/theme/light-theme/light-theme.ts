@@ -1,29 +1,29 @@
-import { themeCreator } from "@showoff/design.theme.theme-creator";
-import { alpha } from "@mui/material";
-import { Theme } from "@mui/material";
-import { getCircularXXFontFace } from "@showoff/design.theme.fonts";
+import { themeCreator } from '@showoff/design.theme.theme-creator';
+import { alpha, Theme } from '@mui/material';
+
+import { getCircularXXFontFace } from '@showoff/design.theme.fonts';
 
 export function lightTheme(): Theme {
   return themeCreator({
     palette: {
       primary: {
-        main: '#6C5CE7'
+        main: '#6C5CE7',
       },
       background: {
         default: '#FFFFFF',
-        paper: '#FFFFFF'
+        paper: '#FFFFFF',
       },
       text: {
         primary: '#2B2B2B',
       },
-      divider: '#BABEC9'
+      divider: '#BABEC9',
     },
     components: {
       MuiButton: {
         defaultProps: {
           disableRipple: true,
           disableElevation: true,
-          variant: 'contained'
+          variant: 'contained',
         },
         styleOverrides: {
           root: {
@@ -31,29 +31,29 @@ export function lightTheme(): Theme {
             color: '#FFFFFF',
           },
           sizeSmall: {
-            padding: '6px 16px'
+            padding: '6px 16px',
           },
           sizeMedium: {
-            padding: '8px 20px'
+            padding: '8px 20px',
           },
           sizeLarge: {
-            padding: '11px 24px'
+            padding: '11px 24px',
           },
           textSizeSmall: {
-            padding: '7px 12px'
+            padding: '7px 12px',
           },
           textSizeMedium: {
-            padding: '9px 16px'
+            padding: '9px 16px',
           },
           textSizeLarge: {
-            padding: '12px 16px'
-          }
+            padding: '12px 16px',
+          },
         },
       },
       MuiButtonBase: {
         defaultProps: {
-          disableRipple: true
-        }
+          disableRipple: true,
+        },
       },
       MuiChip: {
         styleOverrides: {
@@ -65,19 +65,19 @@ export function lightTheme(): Theme {
             padding: '4px 8px',
             verticalAlign: 'middle',
             alignItems: 'center',
-          }
-        }
+          },
+        },
       },
       MuiIconButton: {
         styleOverrides: {
           root: {
             borderRadius: 8,
-            padding: 8
+            padding: 8,
           },
           sizeSmall: {
-            padding: 4
-          }
-        }
+            padding: 4,
+          },
+        },
       },
       MuiInputBase: {
         styleOverrides: {
@@ -89,15 +89,15 @@ export function lightTheme(): Theme {
             '&::placeholder': {
               color: '#707279',
             },
-          }
+          },
         },
       },
       MuiInputLabel: {
         styleOverrides: {
           root: {
             color: '#707279',
-          }
-        }
+          },
+        },
       },
       MuiToggleButton: {
         styleOverrides: {
@@ -115,18 +115,18 @@ export function lightTheme(): Theme {
               },
               '& .MuiTypography-root': {
                 color: '#EDEDED',
-              }
-            }
-          }
-        }
+              },
+            },
+          },
+        },
       },
       MuiCssBaseline: {
-        styleOverrides: getCircularXXFontFace()
+        styleOverrides: getCircularXXFontFace(),
       },
     },
     typography: {
       button: {
-        fontWeight: 600
+        fontWeight: 600,
       },
       allVariants: {
         color: '#2B2B2B',
@@ -157,43 +157,43 @@ export function lightTheme(): Theme {
         fontWeight: 600,
         letterSpacing: '0.5px',
         lineHeight: 2.5,
-        textTransform: 'uppercase'
+        textTransform: 'uppercase',
       },
       caption: {
         fontSize: '0.75rem',
         fontWeight: 400,
-        lineHeight: 1.66
+        lineHeight: 1.66,
       },
       h1: {
         fontWeight: 700,
         fontSize: '3.5rem',
-        lineHeight: 1.375
+        lineHeight: 1.375,
       },
       h2: {
         fontWeight: 700,
         fontSize: '3rem',
-        lineHeight: 1.375
+        lineHeight: 1.375,
       },
       h3: {
         fontWeight: 700,
         fontSize: '2.25rem',
-        lineHeight: 1.375
+        lineHeight: 1.375,
       },
       h4: {
         fontWeight: 700,
         fontSize: '2rem',
-        lineHeight: 1.375
+        lineHeight: 1.375,
       },
       h5: {
         fontWeight: 600,
         fontSize: '1.5rem',
-        lineHeight: 1.375
+        lineHeight: 1.375,
       },
       h6: {
         fontWeight: 600,
         fontSize: '1.125rem',
-        lineHeight: 1.375
-      }
+        lineHeight: 1.375,
+      },
     },
   });
 }

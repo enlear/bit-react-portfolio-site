@@ -5,26 +5,22 @@ import { Main } from '@showoff/personal-portfolio.layouts.main';
 import React from 'react';
 import { About } from './about';
 
-export const LightAbout = () => {
-  return (
-    <ThemeProvider
-      theme={lightTheme()}
-    >
-      <Main>
-        <About />
-      </Main>
-    </ThemeProvider>
-  );
-}
+export const LightAbout = () => (
+  <ThemeProvider
+    theme={lightTheme()}
+  >
+    <Main>
+      <About />
+    </Main>
+  </ThemeProvider>
+);
 
-export const DarkAbout = () => {
-  return (
-    <ThemeProvider
-      theme={darkTheme()}
-    >
-      <Main>
-        <About />
-      </Main>
-    </ThemeProvider>
-  )
-}
+export const DarkAbout = () => (
+  <ThemeProvider
+    theme={darkTheme()}
+  >
+    <Main>
+      <About />
+    </Main>
+  </ThemeProvider>
+);

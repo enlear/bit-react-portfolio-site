@@ -4,8 +4,10 @@ import { Heading } from '@showoff/design.widgets.heading';
 import { Typography } from '@showoff/design.widgets.typography';
 import { Picture } from '@showoff/personal-portfolio.ui.person.picture';
 import { Icons } from '@showoff/personal-portfolio.ui.social.icons';
-import { Box, Theme, useMediaQuery } from '@mui/material';
-import { Grid } from '@mui/material';
+import {
+  Box, Theme, useMediaQuery, Grid,
+} from '@mui/material';
+
 import React from 'react';
 
 export type LandingProps = {
@@ -21,12 +23,12 @@ const PersonReachSection = (props: PersonReachSectionProps) => (
       mt={MarginType.MEDIUM}
     >
       <LinkText
-        linkText='Check my projects'
-        url='/projects'
-        color='primary'
+        linkText="Check my projects"
+        url="/projects"
+        color="primary"
         fontWeight={400}
         fontSize={16}
-        iconSize='small'
+        iconSize="small"
       />
     </Margin>
     <Margin
@@ -46,11 +48,10 @@ const PersonReachSection = (props: PersonReachSectionProps) => (
       <Icons />
     </Margin>
   </section>
-)
+);
 
 export function Landing({ }: LandingProps) {
-
-  const AVATAR_URL = "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80";
+  const AVATAR_URL = 'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80';
   const mdDown = useMediaQuery((theme: Theme) => theme.breakpoints.down('md'));
   const lgDown = useMediaQuery((theme: Theme) => theme.breakpoints.down('lg'));
 
@@ -69,7 +70,7 @@ export function Landing({ }: LandingProps) {
           <Typography
             fontWeight={700}
             {...mdDown && {
-              textAlign: 'center'
+              textAlign: 'center',
             }}
           >
             Tobias Sundberg
@@ -79,7 +80,7 @@ export function Landing({ }: LandingProps) {
             {...mdDown && {
               style: {
                 textAlign: 'center',
-              }
+              },
             }}
           >
             <Heading
@@ -97,7 +98,7 @@ export function Landing({ }: LandingProps) {
           >
             <Typography
               {...mdDown && {
-                textAlign: 'center'
+                textAlign: 'center',
               }}
             >
               Frontend developer, UX architect and Javascript engineer, Photochromic Lens enthusiast, practicing minimalist, and Pop Music & Jazz lover in search of flow.

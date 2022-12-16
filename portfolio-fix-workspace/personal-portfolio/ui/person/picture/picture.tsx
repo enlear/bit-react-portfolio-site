@@ -1,6 +1,8 @@
-import { Artwork } from '@showoff/personal-portfolio.ui.person.artwork';
-import { Box, BoxProps, Theme, useMediaQuery } from '@mui/material';
 import React from 'react';
+import { Artwork } from '@showoff/personal-portfolio.ui.person.artwork';
+import {
+  Box, BoxProps, Theme, useMediaQuery,
+} from '@mui/material';
 
 export type PictureProps = {
   /**
@@ -19,7 +21,7 @@ export function Picture({ pictureUrl, sx, ...rest }: PictureProps) {
       <Box sx={{
         position: 'relative',
         top: 30,
-        left: smDown ? '13%' : '20%'
+        left: smDown ? '13%' : '20%',
       }}>
         <img
           src={pictureUrl}
@@ -34,7 +36,7 @@ export function Picture({ pictureUrl, sx, ...rest }: PictureProps) {
         top: 0,
         bottom: 0,
         right: 0,
-        left: smDown ? -275 : -340
+        left: smDown ? -275 : -340,
       }}>
         <Artwork
           height={smDown ? 375 : 500}

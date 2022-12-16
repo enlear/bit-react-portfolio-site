@@ -5,26 +5,22 @@ import { Typography } from '@showoff/design.widgets.typography';
 import React from 'react';
 import { Main } from './main';
 
-export const BasicMain = () => {
-  return (
-    <ThemeProvider
-      theme={lightTheme()}
-    >
-      <Main>
-        <Typography variant="h1">Hello World</Typography>
-      </Main>
-    </ThemeProvider>
-  );
-}
+export const BasicMain = () => (
+  <ThemeProvider
+    theme={lightTheme()}
+  >
+    <Main>
+      <Typography variant="h1">Hello World</Typography>
+    </Main>
+  </ThemeProvider>
+);
 
-export const DarkMain = () => {
-  return (
-    <ThemeProvider
-      theme={darkTheme()}
-    >
-      <Main>
-        <Typography variant="h1">Hello World</Typography>
-      </Main>
-    </ThemeProvider>
-  );
-}
+export const DarkMain = () => (
+  <ThemeProvider
+    theme={darkTheme()}
+  >
+    <Main>
+      <Typography variant="h1">Hello World</Typography>
+    </Main>
+  </ThemeProvider>
+);

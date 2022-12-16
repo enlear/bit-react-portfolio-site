@@ -1,3 +1,3 @@
 export type PortfolioSiteSettings = {
-    theme: 'light' | 'dark';
-}
+  theme: 'light' | 'dark';
+};

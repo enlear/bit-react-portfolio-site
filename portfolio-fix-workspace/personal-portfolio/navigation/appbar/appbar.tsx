@@ -15,14 +15,15 @@ export function Appbar(props: AppbarProps) {
         <Header
           logo={
             <Link
-              href='/'
-              underline='none'
+              href="/"
+              underline="none"
               sx={{
-                textDecoration: 'none'
+                textDecoration: 'none',
               }}
             >
               <Logo />
-            </Link>}
+            </Link>
+          }
           navLinks={[
             { label: 'Projects', url: '/projects' },
             { label: 'Contact', url: '/contact' },
@@ -31,7 +32,7 @@ export function Appbar(props: AppbarProps) {
           themeToggle={<ThemeToggle
             isDark={theme === 'dark'}
             onClick={() => toggleTheme()}
-            size='small'
+            size="small"
           />}
         />
       )}

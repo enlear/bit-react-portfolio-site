@@ -4,22 +4,17 @@ import { ThemeProvider } from '@showoff/design.theme.theme-provider';
 import React from 'react';
 import { Logo } from './logo';
 
-export const LightLogo = () => {
-  return (
-    <ThemeProvider
-      theme={lightTheme()}
-    >
-      <Logo />
-    </ThemeProvider>
-  );
-}
-export const DarkLogo = () => {
-  return (
-    <ThemeProvider
-      theme={darkTheme()}
-    >
-      <Logo />
-    </ThemeProvider>
-  );
-}
-
+export const LightLogo = () => (
+  <ThemeProvider
+    theme={lightTheme()}
+  >
+    <Logo />
+  </ThemeProvider>
+);
+export const DarkLogo = () => (
+  <ThemeProvider
+    theme={darkTheme()}
+  >
+    <Logo />
+  </ThemeProvider>
+);

@@ -8,4 +8,3 @@ ReactDOM.render((
     <PortfolioApp />
   </BrowserRouter>
 ), document.getElementById('root'));
-
