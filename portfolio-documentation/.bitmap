@@ -11,7 +11,7 @@
 {
     "apps/portfolio": {
         "scope": "showoff.personal-portfolio",
-        "version": "0.0.20",
+        "version": "0.0.21",
         "mainFile": "index.ts",
         "rootDir": "personal-portfolio/apps/portfolio"
     },
@@ -65,7 +65,7 @@
     },
     "layouts/main": {
         "scope": "showoff.personal-portfolio",
-        "version": "0.0.13",
+        "version": "0.0.14",
         "mainFile": "index.ts",
         "rootDir": "personal-portfolio/layouts/main"
     },
@@ -83,7 +83,7 @@
     },
     "navigation/appbar": {
         "scope": "showoff.personal-portfolio",
-        "version": "0.0.12",
+        "version": "0.0.13",
         "mainFile": "index.ts",
         "rootDir": "personal-portfolio/navigation/appbar"
     },
@@ -101,56 +101,49 @@
     },
     "navigation/header": {
         "scope": "showoff.design",
-        "version": "0.0.5",
+        "version": "0.0.6",
         "mainFile": "index.ts",
         "rootDir": "design/navigation/header"
     },
     "navigation/link": {
-        "scope": "",
-        "version": "",
-        "defaultScope": "showoff.design",
+        "scope": "showoff.design",
+        "version": "0.0.1",
         "mainFile": "index.ts",
-        "rootDir": "design/navigation/link",
-        "config": {
-            "teambit.react/react": {},
-            "teambit.envs/envs": {
-                "env": "teambit.react/react"
-            }
-        }
+        "rootDir": "design/navigation/link"
     },
     "navigation/link-text": {
         "scope": "showoff.design",
-        "version": "0.0.6",
+        "version": "0.0.7",
         "mainFile": "index.ts",
         "rootDir": "design/navigation/link-text"
     },
     "page/contact": {
         "scope": "showoff.contact-me",
-        "version": "0.0.12",
+        "version": "0.0.13",
         "mainFile": "index.ts",
         "rootDir": "contact-me/page/contact"
     },
     "pages/about": {
         "scope": "showoff.personal-portfolio",
-        "version": "0.0.11",
+        "version": "0.0.12",
         "mainFile": "index.ts",
         "rootDir": "personal-portfolio/pages/about"
     },
     "pages/individual-project": {
         "scope": "showoff.personal-portfolio",
-        "version": "0.0.11",
+        "version": "0.0.12",
         "mainFile": "index.ts",
         "rootDir": "personal-portfolio/pages/individual-project"
     },
     "pages/landing": {
         "scope": "showoff.personal-portfolio",
-        "version": "0.0.11",
+        "version": "0.0.12",
         "mainFile": "index.ts",
         "rootDir": "personal-portfolio/pages/landing"
     },
     "pages/projects": {
         "scope": "showoff.personal-portfolio",
-        "version": "0.0.11",
+        "version": "0.0.12",
         "mainFile": "index.ts",
         "rootDir": "personal-portfolio/pages/projects"
     },
