@@ -1,0 +1,24 @@
+---
+description: 'A Brand Logo Component that serves as the logo for the portfolio site.'
+labels: ['brand', 'brand image', 'site logo']
+---
+
+import { darkTheme } from '@showoff/design.theme.dark-theme';
+import { ThemeProvider } from '@showoff/design.theme.theme-provider';
+import { Logo } from './logo';
+
+A logo component that changes color based on Theme. Hence, to be used with `ThemeProvider`
+
+### Component usage
+
+```js
+<Logo />
+```
+
+### Render dark logo
+
+```js live
+<ThemeProvider theme={darkTheme()}>
+  <Logo />
+</ThemeProvider>
+```

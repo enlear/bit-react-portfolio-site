@@ -1,0 +1,32 @@
+---
+description: An Application Footer
+labels: ['footer', 'app footer']
+---
+
+import { lightTheme } from '@showoff/design.theme.light-theme';
+import { ThemeProvider } from '@showoff/design.theme.theme-provider';
+import { Footer } from './footer';
+
+A component that renders a footer component
+
+### Component usage
+
+```js
+<ThemeProvider theme={lightTheme()}>
+  <Footer
+    leftContent={'Thanks for Visiting.'}
+    rightContent={'© 2022 Ober. All Rights Reserved.'}
+  />
+</ThemeProvider>
+```
+
+### Render sample footer
+
+```js live
+<ThemeProvider theme={lightTheme()}>
+  <Footer
+    leftContent={'Thanks for Visiting.'}
+    rightContent={'© 2022 Ober. All Rights Reserved.'}
+  />
+</ThemeProvider>
+```
