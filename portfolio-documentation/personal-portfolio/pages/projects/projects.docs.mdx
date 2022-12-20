@@ -3,21 +3,25 @@ description: A component that creates a Page for the project list
 labels: ['page', 'project list page']
 ---
 
-import { Projects } from './projects';
+import { MemoryRouter } from 'react-router-dom';
 import { darkTheme } from '@showoff/design.theme.dark-theme';
 import { lightTheme } from '@showoff/design.theme.light-theme';
 import { ThemeProvider } from '@showoff/design.theme.theme-provider';
+import { Projects } from './projects';
 
 A component that renders the project page.
 
 ### Component usage
 
 Use with a `ThemeProvider` to apply the styles required.
+Use with a React Router DOM Implementation to use routing.
 
 ```js
-<ThemeProvider theme={darkTheme()}>
-  <Projects />
-</ThemeProvider>
+<MemoryRouter>
+  <ThemeProvider theme={darkTheme()}>
+    <Projects />
+  </ThemeProvider>
+</MemoryRouter>
 ```
 
 ### Render a themed project page.
@@ -25,7 +29,9 @@ Use with a `ThemeProvider` to apply the styles required.
 Switch between `darkTheme()` and `lightTheme()` to change the project styling.
 
 ```js live
-<ThemeProvider theme={darkTheme()}>
-  <Projects />
-</ThemeProvider>
+<MemoryRouter>
+  <ThemeProvider theme={darkTheme()}>
+    <Projects />
+  </ThemeProvider>
+</MemoryRouter>
 ```

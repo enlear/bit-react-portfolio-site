@@ -3,6 +3,7 @@ description: A Link + Icon + URL component
 labels: ['link url', 'hyperlink']
 ---
 
+import { MemoryRouter } from 'react-router-dom';
 import { ThemeProvider } from '@showoff/design.theme.theme-provider';
 import { lightTheme } from '@showoff/design.theme.light-theme';
 import { LinkText } from './link-text';
@@ -11,30 +12,35 @@ A component that creates a URL Hyperlink with an arrow forward icon.
 
 ### Component usage
 
-Use it with a ThemeProvider to enforce MUI styling
+Use it with a ThemeProvider to enforce MUI styling.
+Use with React Router to enable routing.
 
 ```js
-<ThemeProvider theme={lightTheme()}>
-  <LinkText
-    url="https://www.enlear.com"
-    fontSize={22}
-    iconSize="medium"
-    fontWeight={400}
-    linkText="Hello, Link Text"
-  />
-</ThemeProvider>
+<MemoryRouter>
+  <ThemeProvider theme={lightTheme()}>
+    <LinkText
+      url="https://www.enlear.com"
+      fontSize={22}
+      iconSize="medium"
+      fontWeight={400}
+      linkText="Hello, Link Text"
+    />
+  </ThemeProvider>
+</MemoryRouter>
 ```
 
 ### Render hello world!
 
 ```js live
-<ThemeProvider theme={lightTheme()}>
-  <LinkText
-    url="https://www.enlear.com"
-    fontSize={22}
-    iconSize="medium"
-    fontWeight={400}
-    linkText="Hello, Link Text"
-  />
-</ThemeProvider>
+<MemoryRouter>
+  <ThemeProvider theme={lightTheme()}>
+    <LinkText
+      url="https://www.enlear.com"
+      fontSize={22}
+      iconSize="medium"
+      fontWeight={400}
+      linkText="Hello, Link Text"
+    />
+  </ThemeProvider>
+</MemoryRouter>
 ```

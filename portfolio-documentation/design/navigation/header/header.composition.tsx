@@ -6,25 +6,28 @@ import { Header } from './header';
 import { useState } from 'react';
 import { Logo } from '@showoff/design.brand.logo';
 import { ThemeToggle } from '@showoff/design.theme.theme-toggle';
+import { MemoryRouter } from 'react-router-dom';
 
 export const LightHeader = () => {
   const [isDark, setIsDark] = useState(false);
 
   return (
-    <ThemeProvider
-      theme={lightTheme()}
-    >
-      <Header logo={<Logo />} navLinks={[
-        { label: 'Projects', url: '/projects' },
-        { label: 'Contact', url: '/contact' },
-        { label: 'About', url: '/about' },
-      ]}
-        themeToggle={<ThemeToggle
-          size='small'
-          isDark={isDark}
-          onClick={() => setIsDark(!isDark)} />}
-      />
-    </ThemeProvider>
+    <MemoryRouter>
+      <ThemeProvider
+        theme={lightTheme()}
+      >
+        <Header logo={<Logo />} navLinks={[
+          { label: 'Projects', url: '/projects' },
+          { label: 'Contact', url: '/contact' },
+          { label: 'About', url: '/about' },
+        ]}
+          themeToggle={<ThemeToggle
+            size='small'
+            isDark={isDark}
+            onClick={() => setIsDark(!isDark)} />}
+        />
+      </ThemeProvider>
+    </MemoryRouter>
   );
 }
 
@@ -32,20 +35,22 @@ export const DarkHeader = () => {
   const [isDark, setIsDark] = useState(false);
 
   return (
-    <ThemeProvider
-      theme={darkTheme()}
-    >
-      <Header logo={<Logo />} navLinks={[
-        { label: 'Projects', url: '/projects' },
-        { label: 'Contact', url: '/contact' },
-        { label: 'About', url: '/about' },
-      ]}
-        themeToggle={<ThemeToggle
-          isDark={isDark}
-          size='small'
-          onClick={() => setIsDark(!isDark)} />}
-      />
-    </ThemeProvider>
+    <MemoryRouter>
+      <ThemeProvider
+        theme={darkTheme()}
+      >
+        <Header logo={<Logo />} navLinks={[
+          { label: 'Projects', url: '/projects' },
+          { label: 'Contact', url: '/contact' },
+          { label: 'About', url: '/about' },
+        ]}
+          themeToggle={<ThemeToggle
+            isDark={isDark}
+            size='small'
+            onClick={() => setIsDark(!isDark)} />}
+        />
+      </ThemeProvider>
+    </MemoryRouter>
   );
 }
 

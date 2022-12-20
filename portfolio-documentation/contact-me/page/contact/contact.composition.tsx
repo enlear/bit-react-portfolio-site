@@ -1,4 +1,5 @@
 import React from 'react';
+import { MemoryRouter } from 'react-router-dom';
 import { Main } from '@showoff/personal-portfolio.layouts.main';
 import { darkTheme } from '@showoff/design.theme.dark-theme';
 import { lightTheme } from '@showoff/design.theme.light-theme';
@@ -6,22 +7,26 @@ import { ThemeProvider } from '@showoff/design.theme.theme-provider';
 import { Contact } from './contact';
 
 export const LightContactPage = () => (
-  <ThemeProvider
-    theme={lightTheme()}
-  >
-    <Main
+  <MemoryRouter>
+    <ThemeProvider
+      theme={lightTheme()}
     >
-      <Contact />
-    </Main>
-  </ThemeProvider>
+      <Main
+      >
+        <Contact />
+      </Main>
+    </ThemeProvider>
+  </MemoryRouter>
 );
 
 export const DarkContactPage = () => (
-  <ThemeProvider
-    theme={darkTheme()}
-  >
-    <Main>
-      <Contact />
-    </Main>
-  </ThemeProvider>
+  <MemoryRouter>
+    <ThemeProvider
+      theme={darkTheme()}
+    >
+      <Main>
+        <Contact />
+      </Main>
+    </ThemeProvider>
+  </MemoryRouter>
 );

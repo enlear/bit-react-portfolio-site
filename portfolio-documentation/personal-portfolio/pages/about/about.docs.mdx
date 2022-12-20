@@ -3,6 +3,7 @@ description: A component that creates a Page for `About`
 labels: ['page', 'about page']
 ---
 
+import { MemoryRouter } from 'react-router-dom';
 import { darkTheme } from '@showoff/design.theme.dark-theme';
 import { Main } from '@showoff/personal-portfolio.layouts.main';
 import { ThemeProvider } from '@showoff/design.theme.theme-provider';
@@ -13,17 +14,22 @@ A component that renders an About Me Page
 ### Component usage
 
 Use with a `ThemeProvider` for styling.
+Use with a React Router to enable routing.
 
 ```js
-<About />
+<MemoryRouter>
+  <About />
+</MemoryRouter>
 ```
 
 ### Rendering the About Us page.
 
 ```js live
-<ThemeProvider theme={darkTheme()}>
-  <Main>
-    <About />
-  </Main>
-</ThemeProvider>
+<MemoryRouter>
+  <ThemeProvider theme={darkTheme()}>
+    <Main>
+      <About />
+    </Main>
+  </ThemeProvider>
+</MemoryRouter>
 ```

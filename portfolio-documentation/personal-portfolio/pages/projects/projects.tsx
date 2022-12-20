@@ -1,7 +1,8 @@
+import React from 'react';
+import { Link } from '@showoff/design.navigation.link';
 import { Margin, MarginType } from '@showoff/design.layouts.margin';
 import { Breadcrumb, BreadcrumbProps } from '@showoff/design.widgets.breadcrumb';
-import { Grid, Link } from '@mui/material';
-import React from 'react';
+import { Grid } from '@mui/material';
 import { useProjects } from '@showoff/personal-portfolio.hooks.use-projects';
 import { Card } from '@showoff/design.widgets.card';
 
@@ -32,9 +33,7 @@ export function Projects({ crumbs = [{ crumb: 'projects.' }] }: ProjectsProps) {
               key={index}
             >
               <Link
-                href={`/projects/${project.id}`}
-                underline="none"
-                sx={{ textDecoration: 'none' }}
+                to={`/projects/${project.id}`}
               >
                 <Card
                   title={project.name}

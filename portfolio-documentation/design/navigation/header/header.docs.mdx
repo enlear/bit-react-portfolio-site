@@ -3,6 +3,7 @@ description: An Application Navigation Menu.
 labels: ['navigation', 'top navigation']
 ---
 
+import { MemoryRouter } from 'react-router-dom';
 import { Logo } from '@showoff/design.brand.logo';
 import { ThemeToggle } from '@showoff/design.theme.theme-toggle';
 import { lightTheme } from '@showoff/design.theme.light-theme';
@@ -12,6 +13,8 @@ import { Header } from './header';
 A component that renders a header (navigation) component for an application to be used as a horizontal navbar.
 
 ### Component usage
+
+Use with a React Router to enable the router links.
 
 ```js
 <Header
@@ -34,21 +37,23 @@ A component that renders a header (navigation) component for an application to b
 ### Render sample header
 
 ```js live
-<ThemeProvider theme={lightTheme()}>
-  <Header
-    logo={<Logo />}
-    navLinks={[
-      { label: 'Projects', url: '/projects' },
-      { label: 'Contact', url: '/contact' },
-      { label: 'About', url: '/about' },
-    ]}
-    themeToggle={
-      <ThemeToggle
-        size="small"
-        isDark={false}
-        onClick={() => alert('Hello Dark Mode')}
-      />
-    }
-  />
-</ThemeProvider>
+<MemoryRouter>
+  <ThemeProvider theme={lightTheme()}>
+    <Header
+      logo={<Logo />}
+      navLinks={[
+        { label: 'Projects', url: '/projects' },
+        { label: 'Contact', url: '/contact' },
+        { label: 'About', url: '/about' },
+      ]}
+      themeToggle={
+        <ThemeToggle
+          size="small"
+          isDark={false}
+          onClick={() => alert('Hello Dark Mode')}
+        />
+      }
+    />
+  </ThemeProvider>
+</MemoryRouter>
 ```

@@ -1,11 +1,11 @@
+import React, { ReactNode } from 'react';
 import { AppBar } from '@mui/material';
 import { Container } from '@mui/material';
-import { Link } from '@mui/material';
 import { Box } from '@mui/material';
 import { Toolbar } from '@mui/material';
-import React, { ReactNode } from 'react';
-import { HeaderLink } from './header.type';
 import { Typography } from '@showoff/design.widgets.typography';
+import { Link } from '@showoff/design.navigation.link';
+import { HeaderLink } from './header.type';
 
 export type HeaderProps = {
   logo: ReactNode;
@@ -32,9 +32,8 @@ export function Header({ logo, navLinks = [], themeToggle }: HeaderProps) {
             <Box sx={{ display: 'flex', gap: 1, alignItems: 'center' }}>
               {navLinks.map((link) => (
                 <Link
-                  href={link.url}
+                  to={link.url}
                   key={link.url}
-                  underline="none"
                 >
                   <Typography
                     variant="body2"

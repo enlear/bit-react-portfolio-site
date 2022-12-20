@@ -3,15 +3,17 @@ description: An application navigation bar implemented using a reusable navigati
 labels: ['navigation']
 ---
 
-import { Appbar } from './appbar';
+import { MemoryRouter } from 'react-router-dom';
 import { darkTheme } from '@showoff/design.theme.dark-theme';
 import { ThemeProvider } from '@showoff/design.theme.theme-provider';
+import { Appbar } from './appbar';
 
 A component renders an app bar (navigation bar) for the portfolio
 
 ### Component usage
 
 Use with `ThemeProvider` for a theme object.
+Use with a React Router DOM implementation for the Router Links
 
 ```js
 <Appbar />
@@ -20,7 +22,9 @@ Use with `ThemeProvider` for a theme object.
 ### Render hello world!
 
 ```js live
-<ThemeProvider theme={darkTheme()}>
-  <Appbar />
-</ThemeProvider>
+<MemoryRouter>
+  <ThemeProvider theme={darkTheme()}>
+    <Appbar />
+  </ThemeProvider>
+</MemoryRouter>
 ```

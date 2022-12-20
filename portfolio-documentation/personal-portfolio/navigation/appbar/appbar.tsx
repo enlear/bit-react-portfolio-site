@@ -1,9 +1,9 @@
+import React from 'react';
+import { Link } from '@showoff/design.navigation.link';
 import { Header } from '@showoff/design.navigation.header';
 import { ThemeToggle } from '@showoff/design.theme.theme-toggle';
 import { SettingsConsumer } from '@showoff/personal-portfolio.contexts.settings-context';
-import React from 'react';
 import { Logo } from '@showoff/design.brand.logo';
-import { Link } from '@mui/material';
 
 export type AppbarProps = {
 };
@@ -15,11 +15,7 @@ export function Appbar(props: AppbarProps) {
         <Header
           logo={
             <Link
-              href="/"
-              underline="none"
-              sx={{
-                textDecoration: 'none',
-              }}
+              to="/"
             >
               <Logo />
             </Link>

@@ -3,24 +3,30 @@ description: A component that renders a Page for the Contact section
 labels: ['page', 'contact me page']
 ---
 
-import { Contact } from './contact';
+import { MemoryRouter } from 'react-router-dom';
 import { ThemeProvider } from '@showoff/design.theme.theme-provider';
 import { lightTheme } from '@showoff/design.theme.light-theme';
+import { Contact } from './contact';
 
 A component that renders a contact us page.
 
 ### Component usage
 
 Use with `ThemeProvider` to apply themes.
+Use with a React Router wrapper to enable routing.
 
 ```js
-<Contact />
+<MemoryRouter>
+  <Contact />
+</MemoryRouter>
 ```
 
 ### Render the contact us page on light theme.
 
 ```js live
-<ThemeProvider theme={lightTheme()}>
-  <Contact />
-</ThemeProvider>
+<MemoryRouter>
+  <ThemeProvider theme={lightTheme()}>
+    <Contact />
+  </ThemeProvider>
+</MemoryRouter>
 ```

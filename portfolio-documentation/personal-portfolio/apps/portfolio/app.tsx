@@ -1,5 +1,6 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
+import { Helmet } from "react-helmet";
 import { darkTheme } from '@showoff/design.theme.dark-theme';
 import { lightTheme } from '@showoff/design.theme.light-theme';
 import { SettingsProvider, SettingsConsumer } from '@showoff/personal-portfolio.contexts.settings-context';
@@ -16,24 +17,29 @@ const light = lightTheme();
 
 export function PortfolioApp() {
   return (
-    <SettingsProvider>
-      <SettingsConsumer>
-        {({ theme }) => (
-          <ThemeProvider
-            theme={theme === 'dark' ? dark : light}
-          >
-            <Main>
-              <Routes>
-                <Route path="/" element={<Landing />} />
-                <Route path="/about" element={<About />} />
-                <Route path="/contact" element={<Contact />} />
-                <Route path="/projects" element={<Projects />} />
-                <Route path="/projects/:id" element={<IndividualProject />} />
-              </Routes>
-            </Main>
-          </ThemeProvider>
-        )}
-      </SettingsConsumer>
-    </SettingsProvider >
+    <>
+      <Helmet>
+        <title>My Portfolio</title>
+      </Helmet>
+      <SettingsProvider>
+        <SettingsConsumer>
+          {({ theme }) => (
+            <ThemeProvider
+              theme={theme === 'dark' ? dark : light}
+            >
+              <Main>
+                <Routes>
+                  <Route path="/" element={<Landing />} />
+                  <Route path="/about" element={<About />} />
+                  <Route path="/contact" element={<Contact />} />
+                  <Route path="/projects" element={<Projects />} />
+                  <Route path="/projects/:id" element={<IndividualProject />} />
+                </Routes>
+              </Main>
+            </ThemeProvider>
+          )}
+        </SettingsConsumer>
+      </SettingsProvider >
+    </>
   );
 }

@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
+import { Link } from '@showoff/design.navigation.link';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
-import { Link } from '@mui/material';
 import { TextIcon } from '@showoff/design.widgets.text-icon';
+import { useTheme } from '@mui/material';
 
 export type LinkTextProps = {
 
@@ -38,13 +39,12 @@ export type LinkTextProps = {
 
 export function LinkText({ url, linkText, iconSize = "medium", fontWeight = 400, fontSize = 16, color = 'primary' }: LinkTextProps) {
   const [hovered, setHovered] = useState<boolean>(false);
+  const theme = useTheme();
   return (
     <Link
-      href={url}
-      target="_blank"
-      underline="none"
-      sx={{
-        color: (theme) => theme.palette.text[color],
+      to={url}
+      style={{
+        color: theme.palette.text[color],
       }}
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
