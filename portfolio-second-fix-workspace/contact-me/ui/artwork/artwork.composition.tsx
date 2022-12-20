@@ -5,17 +5,17 @@ import { ThemeProvider } from '@showoff/design.theme.theme-provider';
 import { Artwork } from './artwork';
 
 export const LightArtwork = () => (
-  <ThemeProvider
-    theme={lightTheme()}
-  >
-    <Artwork />
-  </ThemeProvider>
+    <ThemeProvider
+      theme={lightTheme()}
+    >
+      <Artwork />
+    </ThemeProvider>
 );
 
 export const DarkArtwork = () => (
-  <ThemeProvider
-    theme={darkTheme()}
-  >
-    <Artwork />
-  </ThemeProvider>
+    <ThemeProvider
+      theme={darkTheme()}
+    >
+      <Artwork />
+    </ThemeProvider>
 );

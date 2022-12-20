@@ -9,11 +9,41 @@
  */
 
 {
+    "brand/logo": {
+        "scope": "showoff.design",
+        "version": "0.0.7",
+        "mainFile": "index.ts",
+        "rootDir": "design/brand/logo"
+    },
+    "inputs/text-field": {
+        "scope": "showoff.design",
+        "version": "0.0.6",
+        "mainFile": "index.ts",
+        "rootDir": "design/inputs/text-field"
+    },
+    "inputs/toggle-button": {
+        "scope": "showoff.design",
+        "version": "0.0.2",
+        "mainFile": "index.ts",
+        "rootDir": "design/inputs/toggle-button"
+    },
     "layouts/margin": {
         "scope": "showoff.design",
         "version": "0.0.4",
         "mainFile": "index.ts",
         "rootDir": "design/layouts/margin"
+    },
+    "navigation/footer": {
+        "scope": "showoff.design",
+        "version": "0.0.2",
+        "mainFile": "index.ts",
+        "rootDir": "design/navigation/footer"
+    },
+    "navigation/link-text": {
+        "scope": "showoff.design",
+        "version": "0.0.2",
+        "mainFile": "index.ts",
+        "rootDir": "design/navigation/link-text"
     },
     "theme/dark-theme": {
         "scope": "showoff.design",
@@ -27,11 +57,29 @@
         "mainFile": "index.ts",
         "rootDir": "design/theme/light-theme"
     },
-    "ui/person/artwork": {
-        "scope": "showoff.personal-portfolio",
+    "theme/theme-toggle": {
+        "scope": "showoff.design",
+        "version": "0.0.2",
+        "mainFile": "index.ts",
+        "rootDir": "design/theme/theme-toggle"
+    },
+    "ui/artwork": {
+        "scope": "showoff.contact-me",
         "version": "0.0.6",
         "mainFile": "index.ts",
+        "rootDir": "contact-me/ui/artwork"
+    },
+    "ui/person/artwork": {
+        "scope": "showoff.personal-portfolio",
+        "version": "0.0.7",
+        "mainFile": "index.ts",
         "rootDir": "personal-portfolio/ui/person/artwork"
+    },
+    "widgets/breadcrumb": {
+        "scope": "showoff.design",
+        "version": "0.0.2",
+        "mainFile": "index.ts",
+        "rootDir": "design/widgets/breadcrumb"
     },
     "$schema-version": "15.0.0"
 }

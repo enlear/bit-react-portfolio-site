@@ -2,20 +2,19 @@ import React from 'react';
 import { darkTheme } from '@showoff/design.theme.dark-theme';
 import { lightTheme } from '@showoff/design.theme.light-theme';
 import { ThemeProvider } from '@showoff/design.theme.theme-provider';
-import { Artwork } from './artwork';
+import { Logo } from './logo';
 
-export const LightArtwork = () => (
+export const LightLogo = () => (
   <ThemeProvider
     theme={lightTheme()}
   >
-    <Artwork />
+    <Logo />
   </ThemeProvider>
 );
-
-export const DarkArtwork = () => (
+export const DarkLogo = () => (
   <ThemeProvider
     theme={darkTheme()}
   >
-    <Artwork />
+    <Logo />
   </ThemeProvider>
 );
