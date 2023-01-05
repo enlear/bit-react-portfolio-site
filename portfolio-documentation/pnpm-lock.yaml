@@ -81,6 +81,9 @@ importers:
   design/brand/logo:
     specifiers: {}
 
+  design/inputs/button:
+    specifiers: {}
+
   design/inputs/text-field:
     specifiers: {}
 
@@ -121,9 +124,6 @@ importers:
     specifiers: {}
 
   design/widgets/breadcrumb:
-    specifiers: {}
-
-  design/widgets/button:
     specifiers: {}
 
   design/widgets/card:

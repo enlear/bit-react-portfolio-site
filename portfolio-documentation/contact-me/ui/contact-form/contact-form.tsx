@@ -3,7 +3,7 @@ import React from 'react';
 import { useFormik } from 'formik';
 import { ContactFormType } from './contact-form.type';
 import { TextField } from '@showoff/design.inputs.text-field';
-import { Button } from '@showoff/design.widgets.button';
+import { Button } from '@showoff/design.inputs.button';
 
 export type ContactFormProps = {
   onSubmit: (values: ContactFormType) => void | Promise<void>;
