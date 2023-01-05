@@ -4,7 +4,7 @@ import { Main } from '@showoff/personal-portfolio.layouts.main';
 import { darkTheme } from '@showoff/design.theme.dark-theme';
 import { lightTheme } from '@showoff/design.theme.light-theme';
 import { ThemeProvider } from '@showoff/design.theme.theme-provider';
-import { Contact } from './contact';
+import { ContactPage } from './contact-page';
 
 export const LightContactPage = () => (
   <MemoryRouter>
@@ -13,7 +13,7 @@ export const LightContactPage = () => (
     >
       <Main
       >
-        <Contact />
+        <ContactPage />
       </Main>
     </ThemeProvider>
   </MemoryRouter>
@@ -25,7 +25,7 @@ export const DarkContactPage = () => (
       theme={darkTheme()}
     >
       <Main>
-        <Contact />
+        <ContactPage />
       </Main>
     </ThemeProvider>
   </MemoryRouter>

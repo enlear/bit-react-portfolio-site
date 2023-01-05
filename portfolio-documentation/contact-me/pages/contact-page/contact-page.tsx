@@ -8,10 +8,10 @@ import { ContactForm, ContactFormType } from '@showoff/contact-me.ui.contact-for
 import { Artwork } from '@showoff/contact-me.ui.artwork';
 import { Box, Grid, GridProps } from '@mui/material';
 
-export type ContactProps = {
+export type ContactPageProps = {
 } & GridProps;
 
-export function Contact(props: ContactProps) {
+export function ContactPage(props: ContactPageProps) {
   const handleFormSubmit = async (values: ContactFormType) => {
     // TODO: Implement form submit
   };

@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import { DarkContactPage } from './contact.composition';
+import { DarkContactPage } from './contact-page.composition';
 
 it('should render with the correct breadcrumb', () => {
   const { getByText } = render(<DarkContactPage />);

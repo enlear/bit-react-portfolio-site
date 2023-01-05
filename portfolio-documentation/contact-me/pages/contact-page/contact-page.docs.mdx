@@ -6,7 +6,7 @@ labels: ['page', 'contact me page']
 import { MemoryRouter } from 'react-router-dom';
 import { ThemeProvider } from '@showoff/design.theme.theme-provider';
 import { lightTheme } from '@showoff/design.theme.light-theme';
-import { Contact } from './contact';
+import { ContactPage } from './contact-page';
 
 A component that renders a contact us page.
 
@@ -17,7 +17,7 @@ Use with a React Router wrapper to enable routing.
 
 ```js
 <MemoryRouter>
-  <Contact />
+  <ContactPage />
 </MemoryRouter>
 ```
 
@@ -26,7 +26,7 @@ Use with a React Router wrapper to enable routing.
 ```js live
 <MemoryRouter>
   <ThemeProvider theme={lightTheme()}>
-    <Contact />
+    <ContactPage />
   </ThemeProvider>
 </MemoryRouter>
 ```

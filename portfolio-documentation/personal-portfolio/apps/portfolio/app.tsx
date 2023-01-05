@@ -9,7 +9,7 @@ import { About } from '@showoff/personal-portfolio.pages.about';
 import { IndividualProject } from '@showoff/personal-portfolio.pages.individual-project';
 import { Landing } from '@showoff/personal-portfolio.pages.landing';
 import { Projects } from '@showoff/personal-portfolio.pages.projects';
-import { Contact } from '@showoff/contact-me.page.contact';
+import { ContactPage } from '@showoff/contact-me.pages.contact-page';
 import { ThemeProvider } from '@showoff/design.theme.theme-provider';
 
 const dark = darkTheme();
@@ -31,7 +31,7 @@ export function PortfolioApp() {
                 <Routes>
                   <Route path="/" element={<Landing />} />
                   <Route path="/about" element={<About />} />
-                  <Route path="/contact" element={<Contact />} />
+                  <Route path="/contact" element={<ContactPage />} />
                   <Route path="/projects" element={<Projects />} />
                   <Route path="/projects/:id" element={<IndividualProject />} />
                 </Routes>
