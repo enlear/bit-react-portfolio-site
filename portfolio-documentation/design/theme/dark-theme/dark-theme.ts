@@ -1,4 +1,4 @@
-import { getCircularXXFontFace } from '@showoff/design.theme.fonts';
+import { getCircularXXFontFace } from '@showoff/design.fonts.ciruclar-xx';
 import { themeCreator } from '@showoff/design.theme.theme-creator';
 import { alpha, Theme } from '@mui/material';
 

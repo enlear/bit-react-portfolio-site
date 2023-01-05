@@ -1,7 +1,6 @@
-import { themeCreator } from '@showoff/design.theme.theme-creator';
 import { alpha, Theme } from '@mui/material';
-
-import { getCircularXXFontFace } from '@showoff/design.theme.fonts';
+import { themeCreator } from '@showoff/design.theme.theme-creator';
+import { getCircularXXFontFace } from '@showoff/design.fonts.ciruclar-xx';
 
 export function lightTheme(): Theme {
   return themeCreator({

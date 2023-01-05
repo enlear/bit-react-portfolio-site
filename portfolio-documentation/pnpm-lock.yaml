@@ -87,6 +87,9 @@ importers:
   design/elements/chip:
     specifiers: {}
 
+  design/fonts/ciruclar-xx:
+    specifiers: {}
+
   design/inputs/button:
     specifiers: {}
 
@@ -115,9 +118,6 @@ importers:
     specifiers: {}
 
   design/theme/dark-theme:
-    specifiers: {}
-
-  design/theme/fonts:
     specifiers: {}
 
   design/theme/light-theme:
