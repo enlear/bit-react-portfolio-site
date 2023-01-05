@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import { DarkLandingPage } from './landing.composition';
+import { DarkLandingPage } from './landing-page.composition';
 
 it('should render with the correct text', () => {
   const { getByText } = render(<DarkLandingPage />);

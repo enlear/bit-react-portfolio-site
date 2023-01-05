@@ -6,10 +6,10 @@ import { Grid } from '@mui/material';
 import { useProjects } from '@showoff/personal-portfolio.hooks.use-projects';
 import { Card } from '@showoff/design.widgets.card';
 
-export type ProjectsProps = {
+export type ProjectsPageProps = {
 } & Partial<BreadcrumbProps>;
 
-export function Projects({ crumbs = [{ crumb: 'projects.' }] }: ProjectsProps) {
+export function ProjectsPage({ crumbs = [{ crumb: 'projects.' }] }: ProjectsPageProps) {
   const { projects } = useProjects();
 
   return (

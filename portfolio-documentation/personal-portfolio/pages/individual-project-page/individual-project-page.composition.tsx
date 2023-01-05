@@ -4,10 +4,9 @@ import { ThemeProvider } from '@showoff/design.theme.theme-provider';
 import { Main } from '@showoff/personal-portfolio.layouts.main';
 import React from 'react';
 import { Routes, MemoryRouter, Route } from 'react-router-dom';
+import { IndividualProjectPage } from './individual-project-page';
 
-import { IndividualProject } from './individual-project';
-
-export const LightIndividualProject = () => (
+export const LightIndividualProjectPage = () => (
   <ThemeProvider
     theme={lightTheme()}
   >
@@ -23,7 +22,7 @@ export const LightIndividualProject = () => (
         <Routes>
           <Route
             path="/projects/:id"
-            element={<IndividualProject />}
+            element={<IndividualProjectPage />}
           >
           </Route>
         </Routes>
@@ -48,7 +47,7 @@ export const DarkIndividualProject = () => (
         <Routes>
           <Route
             path="/projects/:id"
-            element={<IndividualProject />}
+            element={<IndividualProjectPage />}
           >
           </Route>
         </Routes>
@@ -57,7 +56,7 @@ export const DarkIndividualProject = () => (
   </ThemeProvider>
 );
 
-export const InvalidIndividualProject = () => (
+export const InvalidIndividualProjectPage = () => (
   <ThemeProvider
     theme={darkTheme()}
   >
@@ -73,7 +72,7 @@ export const InvalidIndividualProject = () => (
         <Routes>
           <Route
             path="/projects/:id"
-            element={<IndividualProject />}
+            element={<IndividualProjectPage />}
           >
           </Route>
         </Routes>

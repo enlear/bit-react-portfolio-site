@@ -10,10 +10,10 @@ import { History } from '@showoff/personal-portfolio.ui.about.history';
 import { TextIcon } from '@showoff/design.widgets.text-icon';
 import Download from '@mui/icons-material/Download';
 
-export type AboutProps = {
+export type AboutPageProps = {
 } & GridProps;
 
-export function About(props: AboutProps) {
+export function AboutPage(props: AboutPageProps) {
   return (
     <>
       <Grid

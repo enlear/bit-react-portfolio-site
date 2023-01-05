@@ -69,7 +69,7 @@ importers:
       '@types/react-dom': registry.npmjs.org/@types/react-dom/17.0.18
       '@types/testing-library__jest-dom': registry.npmjs.org/@types/testing-library__jest-dom/5.9.5
 
-  contact-me/page/contact:
+  contact-me/pages/contact-page:
     specifiers: {}
 
   contact-me/ui/artwork:
@@ -94,6 +94,9 @@ importers:
     specifiers: {}
 
   design/navigation/header:
+    specifiers: {}
+
+  design/navigation/link:
     specifiers: {}
 
   design/navigation/link-text:
@@ -174,16 +177,16 @@ importers:
   personal-portfolio/navigation/appfooter:
     specifiers: {}
 
-  personal-portfolio/pages/about:
+  personal-portfolio/pages/about-page:
     specifiers: {}
 
-  personal-portfolio/pages/individual-project:
+  personal-portfolio/pages/individual-project-page:
     specifiers: {}
 
-  personal-portfolio/pages/landing:
+  personal-portfolio/pages/landing-page:
     specifiers: {}
 
-  personal-portfolio/pages/projects:
+  personal-portfolio/pages/projects-page:
     specifiers: {}
 
   personal-portfolio/ui/about/history:

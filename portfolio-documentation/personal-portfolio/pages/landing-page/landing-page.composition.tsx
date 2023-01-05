@@ -4,27 +4,27 @@ import { darkTheme } from '@showoff/design.theme.dark-theme';
 import { lightTheme } from '@showoff/design.theme.light-theme';
 import { ThemeProvider } from '@showoff/design.theme.theme-provider';
 import { Main } from '@showoff/personal-portfolio.layouts.main';
-import { Projects } from './projects';
+import { LandingPage } from './landing-page';
 
-export const LightProjects = () => (
+export const LightLandingPage = () => (
   <MemoryRouter>
     <ThemeProvider
       theme={lightTheme()}
     >
       <Main>
-        <Projects />
+        <LandingPage />
       </Main>
     </ThemeProvider>
   </MemoryRouter>
 );
 
-export const DarkProjects = () => (
+export const DarkLandingPage = () => (
   <MemoryRouter>
     <ThemeProvider
       theme={darkTheme()}
     >
       <Main>
-        <Projects />
+        <LandingPage />
       </Main>
     </ThemeProvider>
   </MemoryRouter>

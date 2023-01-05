@@ -5,12 +5,12 @@ import { darkTheme } from '@showoff/design.theme.dark-theme';
 import { lightTheme } from '@showoff/design.theme.light-theme';
 import { SettingsProvider, SettingsConsumer } from '@showoff/personal-portfolio.contexts.settings-context';
 import { Main } from '@showoff/personal-portfolio.layouts.main';
-import { About } from '@showoff/personal-portfolio.pages.about';
-import { IndividualProject } from '@showoff/personal-portfolio.pages.individual-project';
-import { Landing } from '@showoff/personal-portfolio.pages.landing';
-import { Projects } from '@showoff/personal-portfolio.pages.projects';
-import { ContactPage } from '@showoff/contact-me.pages.contact-page';
-import { ThemeProvider } from '@showoff/design.theme.theme-provider';
+import { ThemeProvider } from '@emotion/react';
+import { ContactPage } from '@mui/icons-material';
+import { AboutPage } from '@showoff/personal-portfolio.pages.about-page';
+import { IndividualProjectPage } from '@showoff/personal-portfolio.pages.individual-project-page';
+import { LandingPage } from '@showoff/personal-portfolio.pages.landing-page';
+import { ProjectsPage } from '@showoff/personal-portfolio.pages.projects-page';
 
 const dark = darkTheme();
 const light = lightTheme();
@@ -29,11 +29,11 @@ export function PortfolioApp() {
             >
               <Main>
                 <Routes>
-                  <Route path="/" element={<Landing />} />
-                  <Route path="/about" element={<About />} />
+                  <Route path="/" element={<LandingPage />} />
+                  <Route path="/about" element={<AboutPage />} />
                   <Route path="/contact" element={<ContactPage />} />
-                  <Route path="/projects" element={<Projects />} />
-                  <Route path="/projects/:id" element={<IndividualProject />} />
+                  <Route path="/projects" element={<ProjectsPage />} />
+                  <Route path="/projects/:id" element={<IndividualProjectPage />} />
                 </Routes>
               </Main>
             </ThemeProvider>

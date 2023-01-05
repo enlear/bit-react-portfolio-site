@@ -1,3 +1,5 @@
+import React from 'react';
+import { useParams } from 'react-router-dom';
 import { Margin, MarginType } from '@showoff/design.layouts.margin';
 import { LinkText } from '@showoff/design.navigation.link-text';
 import { Breadcrumb } from '@showoff/design.widgets.breadcrumb';
@@ -5,18 +7,13 @@ import { Chip } from '@showoff/design.widgets.chip';
 import { Heading } from '@showoff/design.widgets.heading';
 import { Typography } from '@showoff/design.widgets.typography';
 import { useProject } from '@showoff/personal-portfolio.hooks.use-project';
-import {
-  Container, Grid, GridProps, Box, CardMedia,
-} from '@mui/material';
-
+import { Container, Grid, GridProps, Box, CardMedia, } from '@mui/material';
 import { SocialLinks } from '@teambit/people.ui.social-links';
-import React from 'react';
-import { useParams } from 'react-router-dom';
 
-export type IndividualProjectProps = {
+export type IndividualProjectPageProps = {
 } & GridProps;
 
-export function IndividualProject(props: IndividualProjectProps) {
+export function IndividualProjectPage(props: IndividualProjectPageProps) {
   const { id } = useParams();
   const { project } = useProject({ id: id as string });
 

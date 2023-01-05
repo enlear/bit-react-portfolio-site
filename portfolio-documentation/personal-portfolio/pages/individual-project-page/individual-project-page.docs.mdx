@@ -3,12 +3,11 @@ description: A component that creates a Page for an Individual Project
 labels: ['page', 'individual project page']
 ---
 
-import { IndividualProject } from './individual-project';
+import { Routes, MemoryRouter, Route } from 'react-router-dom';
 import { lightTheme } from '@showoff/design.theme.light-theme';
 import { ThemeProvider } from '@showoff/design.theme.theme-provider';
 import { Main } from '@showoff/personal-portfolio.layouts.main';
-import { Routes } from 'react-router-dom';
-import { MemoryRouter, Route } from 'react-router-dom';
+import { IndividualProjectPage } from './individual-project-page';
 
 A page component that renders information about a single project
 
@@ -26,14 +25,14 @@ Path param = `id`
       initialIndex={0}
     >
       <Routes>
-        <Route path="/projects/:id" element={<IndividualProject />}></Route>
+        <Route path="/projects/:id" element={<IndividualProjectPage />}></Route>
       </Routes>
     </MemoryRouter>
   </Main>
 </ThemeProvider>
 ```
 
-### Render hello world!
+### Render project page by ID
 
 ```js live
 <ThemeProvider theme={darkTheme()}>
@@ -43,7 +42,7 @@ Path param = `id`
       initialIndex={0}
     >
       <Routes>
-        <Route path="/projects/:id" element={<IndividualProject />}></Route>
+        <Route path="/projects/:id" element={<IndividualProjectPage />}></Route>
       </Routes>
     </MemoryRouter>
   </Main>

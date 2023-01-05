@@ -7,7 +7,7 @@ import { MemoryRouter } from 'react-router-dom';
 import { darkTheme } from '@showoff/design.theme.dark-theme';
 import { lightTheme } from '@showoff/design.theme.light-theme';
 import { ThemeProvider } from '@showoff/design.theme.theme-provider';
-import { Projects } from './projects';
+import { ProjectsPage } from './projects-page';
 
 A component that renders the project page.
 
@@ -19,7 +19,7 @@ Use with a React Router DOM Implementation to use routing.
 ```js
 <MemoryRouter>
   <ThemeProvider theme={darkTheme()}>
-    <Projects />
+    <ProjectsPage />
   </ThemeProvider>
 </MemoryRouter>
 ```
@@ -31,7 +31,7 @@ Switch between `darkTheme()` and `lightTheme()` to change the project styling.
 ```js live
 <MemoryRouter>
   <ThemeProvider theme={darkTheme()}>
-    <Projects />
+    <ProjectsPage />
   </ThemeProvider>
 </MemoryRouter>
 ```

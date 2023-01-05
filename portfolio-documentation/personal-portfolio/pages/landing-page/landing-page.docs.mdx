@@ -1,35 +1,32 @@
 ---
-description: A component that creates a Page for `About`
-labels: ['page', 'about page']
+description: A component that creates a Page for the site landings
+labels: ['page', 'landing page']
 ---
 
 import { MemoryRouter } from 'react-router-dom';
 import { darkTheme } from '@showoff/design.theme.dark-theme';
-import { Main } from '@showoff/personal-portfolio.layouts.main';
 import { ThemeProvider } from '@showoff/design.theme.theme-provider';
-import { About } from './about';
+import { LandingPage } from './landing-page';
 
-A component that renders an About Me Page
+A component that renders a Landing page component
 
 ### Component usage
 
-Use with a `ThemeProvider` for styling.
+Use with a `ThemeProvider` to render with theme
 Use with a React Router to enable routing.
 
 ```js
 <MemoryRouter>
-  <About />
+  <LandingPage />
 </MemoryRouter>
 ```
 
-### Rendering the About Us page.
+### Render dark landing page
 
 ```js live
 <MemoryRouter>
   <ThemeProvider theme={darkTheme()}>
-    <Main>
-      <About />
-    </Main>
+    <LandingPage />
   </ThemeProvider>
 </MemoryRouter>
 ```
