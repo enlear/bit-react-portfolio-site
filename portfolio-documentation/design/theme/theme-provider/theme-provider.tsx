@@ -1,5 +1,6 @@
 import React, { ReactNode } from 'react';
 import { CssBaseline, ThemeOptions, ThemeProvider as MuiThemeProvider } from '@mui/material';
+import { lightTheme } from '@showoff/design.theme.light-theme';
 
 export type ThemeProviderProps = {
   /**
@@ -10,10 +11,10 @@ export type ThemeProviderProps = {
   /**
    * The theme to use.
    */
-  theme: ThemeOptions;
+  theme?: ThemeOptions;
 };
 
-export function ThemeProvider({ children, theme }: ThemeProviderProps) {
+export function ThemeProvider({ children, theme = lightTheme() }: ThemeProviderProps) {
   return (
     <MuiThemeProvider
       theme={theme}

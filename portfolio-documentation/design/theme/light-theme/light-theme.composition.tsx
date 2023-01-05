@@ -1,7 +1,7 @@
 import React from 'react';
-import { ThemeProvider } from '@showoff/design.theme.theme-provider';
 import { Button } from '@mui/material';
 import { lightTheme } from './light-theme';
+import { ThemeProvider } from '@mui/material';
 
 export function LightTheme() {
   return (
