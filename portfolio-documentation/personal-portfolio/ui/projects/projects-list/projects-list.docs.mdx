@@ -1,0 +1,23 @@
+---
+description: A component that displays a list of projects.
+labels: ['List', 'Project List']
+---
+
+import { ThemeProvider } from '@showoff/design.theme.theme-provider';
+import { ProjectsList } from './projects-list';
+
+A component that displays a list of projects.
+
+### Component usage
+
+```js
+<ProjectsList max={10} />
+```
+
+### Render project list with no maximum number
+
+```js live
+<ThemeProvider>
+  <ProjectsList />
+</ThemeProvider>
+```

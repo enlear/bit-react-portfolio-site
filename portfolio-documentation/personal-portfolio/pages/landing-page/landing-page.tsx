@@ -6,6 +6,7 @@ import { Typography } from '@showoff/design.typography.typography';
 import { Picture } from '@showoff/personal-portfolio.ui.person.picture';
 import { Icons } from '@showoff/personal-portfolio.ui.social.icons';
 import { Box, Theme, useMediaQuery, Grid, } from '@mui/material';
+import { ProjectsList } from '@showoff/personal-portfolio.ui.projects.projects-list';
 
 export type LandingPageProps = {
 };
@@ -47,7 +48,7 @@ const PersonReachSection = (props: PersonReachSectionProps) => (
   </section>
 );
 
-export function LandingPage({ }: LandingPageProps) {
+export function LandingPage(props: LandingPageProps) {
   const AVATAR_URL = 'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80';
   const mdDown = useMediaQuery((theme: Theme) => theme.breakpoints.down('md'));
 
@@ -132,6 +133,20 @@ export function LandingPage({ }: LandingPageProps) {
           <PersonReachSection />
         </Grid>
       )}
+      <Grid item
+        xs={12}
+        sm={12}
+        md={12}
+        sx={{
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+        }}
+      >
+        <ProjectsList
+          max={6}
+        />
+      </Grid>
     </Grid >
   );
 }

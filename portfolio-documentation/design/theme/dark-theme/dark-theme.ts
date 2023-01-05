@@ -32,6 +32,9 @@ export function darkTheme(): Theme {
               backgroundColor: alpha('#CBF382', 0.35),
             },
             color: '#070414',
+            "&.Mui-disabled": {
+              "backgroundColor": "rgba(203, 243, 130, 0.35)"
+            }
           },
           sizeSmall: {
             padding: '6px 16px',
@@ -50,9 +53,6 @@ export function darkTheme(): Theme {
           },
           textSizeLarge: {
             padding: '12px 16px',
-          },
-          disabled: {
-            backgroundColor: alpha('#CBF382', 0.35),
           },
         },
       },

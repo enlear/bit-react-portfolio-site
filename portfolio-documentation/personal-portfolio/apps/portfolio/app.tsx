@@ -5,12 +5,12 @@ import { darkTheme } from '@showoff/design.theme.dark-theme';
 import { lightTheme } from '@showoff/design.theme.light-theme';
 import { SettingsProvider, SettingsConsumer } from '@showoff/personal-portfolio.contexts.settings-context';
 import { Main } from '@showoff/personal-portfolio.layouts.main';
-import { ThemeProvider } from '@emotion/react';
 import { ContactPage } from '@mui/icons-material';
 import { AboutPage } from '@showoff/personal-portfolio.pages.about-page';
 import { IndividualProjectPage } from '@showoff/personal-portfolio.pages.individual-project-page';
 import { LandingPage } from '@showoff/personal-portfolio.pages.landing-page';
 import { ProjectsPage } from '@showoff/personal-portfolio.pages.projects-page';
+import { ThemeProvider } from '@showoff/design.theme.theme-provider';
 
 const dark = darkTheme();
 const light = lightTheme();
