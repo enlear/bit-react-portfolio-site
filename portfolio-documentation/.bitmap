@@ -11,7 +11,7 @@
 {
     "apps/portfolio": {
         "scope": "showoff.personal-portfolio",
-        "version": "0.0.24",
+        "version": "0.0.25",
         "mainFile": "index.ts",
         "rootDir": "personal-portfolio/apps/portfolio"
     },
@@ -23,7 +23,7 @@
     },
     "contexts/settings-context": {
         "scope": "showoff.personal-portfolio",
-        "version": "0.0.9",
+        "version": "0.0.10",
         "mainFile": "index.ts",
         "rootDir": "personal-portfolio/contexts/settings-context"
     },
@@ -65,13 +65,13 @@
     },
     "inputs/toggle-button": {
         "scope": "showoff.design",
-        "version": "0.0.6",
+        "version": "0.0.7",
         "mainFile": "index.ts",
         "rootDir": "design/inputs/toggle-button"
     },
     "layouts/main": {
         "scope": "showoff.personal-portfolio",
-        "version": "0.0.15",
+        "version": "0.0.16",
         "mainFile": "index.ts",
         "rootDir": "personal-portfolio/layouts/main"
     },
@@ -89,25 +89,25 @@
     },
     "navigation/appbar": {
         "scope": "showoff.personal-portfolio",
-        "version": "0.0.14",
+        "version": "0.0.15",
         "mainFile": "index.ts",
         "rootDir": "personal-portfolio/navigation/appbar"
     },
     "navigation/appfooter": {
         "scope": "showoff.personal-portfolio",
-        "version": "0.0.5",
+        "version": "0.0.6",
         "mainFile": "index.ts",
         "rootDir": "personal-portfolio/navigation/appfooter"
     },
     "navigation/footer": {
         "scope": "showoff.design",
-        "version": "0.0.6",
+        "version": "0.0.7",
         "mainFile": "index.ts",
         "rootDir": "design/navigation/footer"
     },
     "navigation/header": {
         "scope": "showoff.design",
-        "version": "0.0.6",
+        "version": "0.0.7",
         "mainFile": "index.ts",
         "rootDir": "design/navigation/header"
     },
@@ -119,37 +119,37 @@
     },
     "navigation/link-text": {
         "scope": "showoff.design",
-        "version": "0.0.7",
+        "version": "0.0.8",
         "mainFile": "index.ts",
         "rootDir": "design/navigation/link-text"
     },
     "pages/about-page": {
         "scope": "showoff.personal-portfolio",
-        "version": "0.0.2",
+        "version": "0.0.3",
         "mainFile": "index.ts",
         "rootDir": "personal-portfolio/pages/about-page"
     },
     "pages/contact-page": {
         "scope": "showoff.contact-me",
-        "version": "0.0.2",
+        "version": "0.0.3",
         "mainFile": "index.ts",
         "rootDir": "contact-me/pages/contact-page"
     },
     "pages/individual-project-page": {
         "scope": "showoff.personal-portfolio",
-        "version": "0.0.2",
+        "version": "0.0.3",
         "mainFile": "index.ts",
         "rootDir": "personal-portfolio/pages/individual-project-page"
     },
     "pages/landing-page": {
         "scope": "showoff.personal-portfolio",
-        "version": "0.0.2",
+        "version": "0.0.3",
         "mainFile": "index.ts",
         "rootDir": "personal-portfolio/pages/landing-page"
     },
     "pages/projects-page": {
         "scope": "showoff.personal-portfolio",
-        "version": "0.0.2",
+        "version": "0.0.3",
         "mainFile": "index.ts",
         "rootDir": "personal-portfolio/pages/projects-page"
     },
@@ -189,9 +189,21 @@
         "mainFile": "index.ts",
         "rootDir": "design/theme/theme-toggle"
     },
+    "typography/heading": {
+        "scope": "showoff.design",
+        "version": "0.0.1",
+        "mainFile": "index.ts",
+        "rootDir": "design/typography/heading"
+    },
+    "typography/typography": {
+        "scope": "showoff.design",
+        "version": "0.0.1",
+        "mainFile": "index.ts",
+        "rootDir": "design/typography/typography"
+    },
     "ui/about/history": {
         "scope": "showoff.personal-portfolio",
-        "version": "0.0.11",
+        "version": "0.0.12",
         "mainFile": "index.ts",
         "rootDir": "personal-portfolio/ui/about/history"
     },
@@ -227,13 +239,13 @@
     },
     "widgets/breadcrumb": {
         "scope": "showoff.design",
-        "version": "0.0.6",
+        "version": "0.0.7",
         "mainFile": "index.ts",
         "rootDir": "design/widgets/breadcrumb"
     },
     "widgets/card": {
         "scope": "showoff.design",
-        "version": "0.0.5",
+        "version": "0.0.6",
         "mainFile": "index.ts",
         "rootDir": "design/widgets/card"
     },
@@ -243,33 +255,21 @@
         "mainFile": "index.ts",
         "rootDir": "design/widgets/chip"
     },
-    "widgets/heading": {
-        "scope": "showoff.design",
-        "version": "0.0.5",
-        "mainFile": "index.ts",
-        "rootDir": "design/widgets/heading"
-    },
     "widgets/sizeable-box": {
         "scope": "showoff.design",
-        "version": "0.0.6",
+        "version": "0.0.7",
         "mainFile": "index.ts",
         "rootDir": "design/widgets/sizeable-box"
     },
     "widgets/text-icon": {
         "scope": "showoff.design",
-        "version": "0.0.5",
+        "version": "0.0.6",
         "mainFile": "index.ts",
         "rootDir": "design/widgets/text-icon"
     },
-    "widgets/typography": {
-        "scope": "showoff.design",
-        "version": "0.0.5",
-        "mainFile": "index.ts",
-        "rootDir": "design/widgets/typography"
-    },
     "widgets/work-item": {
         "scope": "showoff.design",
-        "version": "0.0.9",
+        "version": "0.0.10",
         "mainFile": "index.ts",
         "rootDir": "design/widgets/work-item"
     },

@@ -123,6 +123,12 @@ importers:
   design/theme/theme-toggle:
     specifiers: {}
 
+  design/typography/heading:
+    specifiers: {}
+
+  design/typography/typography:
+    specifiers: {}
+
   design/widgets/breadcrumb:
     specifiers: {}
 
@@ -132,16 +138,10 @@ importers:
   design/widgets/chip:
     specifiers: {}
 
-  design/widgets/heading:
-    specifiers: {}
-
   design/widgets/sizeable-box:
     specifiers: {}
 
   design/widgets/text-icon:
-    specifiers: {}
-
-  design/widgets/typography:
     specifiers: {}
 
   design/widgets/work-item:

@@ -3,7 +3,7 @@ import { TypographyProps } from '@mui/material';
 import { Box } from '@mui/material';
 import { BreadcrumbType } from './breadcrumb.type';
 import { Link } from '@mui/material';
-import { Heading } from '@showoff/design.widgets.heading';
+import { Heading } from '@showoff/design.typography.heading';
 
 export type BreadcrumbProps = {
   /**

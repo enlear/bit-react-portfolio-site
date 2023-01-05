@@ -1,4 +1,4 @@
-import { Typography } from '@showoff/design.widgets.typography';
+import { Typography } from '@showoff/design.typography.typography';
 import { Box } from '@mui/material';
 import React, { ReactNode } from 'react';
 

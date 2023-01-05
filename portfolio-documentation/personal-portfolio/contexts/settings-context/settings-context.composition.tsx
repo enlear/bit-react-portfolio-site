@@ -3,7 +3,7 @@ import { Button } from '@showoff/design.inputs.button';
 import { darkTheme } from '@showoff/design.theme.dark-theme';
 import { lightTheme } from '@showoff/design.theme.light-theme';
 import { ThemeProvider } from '@showoff/design.theme.theme-provider';
-import { Heading } from '@showoff/design.widgets.heading';
+import { Heading } from '@showoff/design.typography.heading';
 import { SettingsProvider, SettingsConsumer } from './settings-context';
 
 export const BasicSettingsContext = () => (

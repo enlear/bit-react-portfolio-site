@@ -2,7 +2,7 @@ import React from 'react';
 import { darkTheme } from '@showoff/design.theme.dark-theme';
 import { lightTheme } from '@showoff/design.theme.light-theme';
 import { ThemeProvider } from '@showoff/design.theme.theme-provider';
-import { Typography } from '@showoff/design.widgets.typography';
+import { Typography } from '@showoff/design.typography.typography';
 import { ToggleButton } from './toggle-button';
 
 export const LightToggleButton = () => {

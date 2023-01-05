@@ -3,7 +3,7 @@ import { AppBar } from '@mui/material';
 import { Container } from '@mui/material';
 import { Box } from '@mui/material';
 import { Toolbar } from '@mui/material';
-import { Typography } from '@showoff/design.widgets.typography';
+import { Typography } from '@showoff/design.typography.typography';
 import { Link } from '@showoff/design.navigation.link';
 import { HeaderLink } from './header.type';
 

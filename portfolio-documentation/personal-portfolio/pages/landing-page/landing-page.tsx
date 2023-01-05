@@ -1,8 +1,8 @@
 import React from 'react';
 import { Margin, MarginType } from '@showoff/design.layouts.margin';
 import { LinkText } from '@showoff/design.navigation.link-text';
-import { Heading } from '@showoff/design.widgets.heading';
-import { Typography } from '@showoff/design.widgets.typography';
+import { Heading } from '@showoff/design.typography.heading';
+import { Typography } from '@showoff/design.typography.typography';
 import { Picture } from '@showoff/personal-portfolio.ui.person.picture';
 import { Icons } from '@showoff/personal-portfolio.ui.social.icons';
 import { Box, Theme, useMediaQuery, Grid, } from '@mui/material';
