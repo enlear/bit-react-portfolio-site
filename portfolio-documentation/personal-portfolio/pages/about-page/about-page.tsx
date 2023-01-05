@@ -1,7 +1,7 @@
 import React from 'react';
 import { Margin, MarginType } from '@showoff/design.layouts.margin';
 import { LinkText } from '@showoff/design.navigation.link-text';
-import { Breadcrumb } from '@showoff/design.widgets.breadcrumb';
+import { Breadcrumb } from '@showoff/design.navigation.breadcrumb';
 import { Heading } from '@showoff/design.typography.heading';
 import { Typography } from '@showoff/design.typography.typography';
 import { Picture } from '@showoff/personal-portfolio.ui.person.picture';

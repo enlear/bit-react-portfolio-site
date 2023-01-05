@@ -2,7 +2,7 @@ import React from 'react';
 import { Icons } from '@showoff/personal-portfolio.ui.social.icons';
 import { MarginType, Margin } from '@showoff/design.layouts.margin';
 import { LinkText } from '@showoff/design.navigation.link-text';
-import { Breadcrumb } from '@showoff/design.widgets.breadcrumb';
+import { Breadcrumb } from '@showoff/design.navigation.breadcrumb';
 import { Typography } from '@showoff/design.typography.typography';
 import { ContactForm, ContactFormType } from '@showoff/contact-me.ui.contact-form';
 import { Artwork } from '@showoff/contact-me.ui.artwork';

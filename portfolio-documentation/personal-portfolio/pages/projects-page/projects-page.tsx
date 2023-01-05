@@ -1,10 +1,10 @@
 import React from 'react';
 import { Link } from '@showoff/design.navigation.link';
 import { Margin, MarginType } from '@showoff/design.layouts.margin';
-import { Breadcrumb, BreadcrumbProps } from '@showoff/design.widgets.breadcrumb';
+import { Breadcrumb, BreadcrumbProps } from '@showoff/design.navigation.breadcrumb';
 import { Grid } from '@mui/material';
 import { useProjects } from '@showoff/personal-portfolio.hooks.use-projects';
-import { Card } from '@showoff/design.widgets.card';
+import { Card } from '@showoff/design.elements.card';
 
 export type ProjectsPageProps = {
 } & Partial<BreadcrumbProps>;

@@ -2,7 +2,7 @@ import React from 'react';
 import { Card as MUICard } from '@mui/material';
 import { CardContent } from '@mui/material';
 import { CardMedia } from '@mui/material';
-import { Chip } from '@showoff/design.widgets.chip';
+import { Chip } from '@showoff/design.elements.chip';
 import { Margin, MarginType } from '@showoff/design.layouts.margin';
 import { Box } from '@mui/material';
 import { Typography } from '@showoff/design.typography.typography';

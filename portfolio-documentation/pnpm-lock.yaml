@@ -81,6 +81,12 @@ importers:
   design/brand/logo:
     specifiers: {}
 
+  design/elements/card:
+    specifiers: {}
+
+  design/elements/chip:
+    specifiers: {}
+
   design/inputs/button:
     specifiers: {}
 
@@ -91,6 +97,9 @@ importers:
     specifiers: {}
 
   design/layouts/margin:
+    specifiers: {}
+
+  design/navigation/breadcrumb:
     specifiers: {}
 
   design/navigation/footer:
@@ -127,15 +136,6 @@ importers:
     specifiers: {}
 
   design/typography/typography:
-    specifiers: {}
-
-  design/widgets/breadcrumb:
-    specifiers: {}
-
-  design/widgets/card:
-    specifiers: {}
-
-  design/widgets/chip:
     specifiers: {}
 
   design/widgets/sizeable-box:
