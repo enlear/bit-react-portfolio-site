@@ -25,7 +25,7 @@ const PersonReachSection = (props: PersonReachSectionProps) => (
         url="/projects"
         color="primary"
         fontWeight={400}
-        fontSize={16}
+        fontSize={22}
         iconSize="small"
       />
     </Margin>
@@ -35,7 +35,7 @@ const PersonReachSection = (props: PersonReachSectionProps) => (
       <Heading
         sx={{ lineHeight: 1.5, display: 'inline', color: (theme) => theme.palette.primary.main }}
         value={'Don\'t be a stranger!'}
-        fontSize={16}
+        fontSize={22}
         fontWeight={400}
       />
       <Typography
@@ -66,6 +66,7 @@ export function LandingPage(props: LandingPageProps) {
         <Box sx={{ width: '100%' }}>
           <Typography
             fontWeight={700}
+            fontSize={28}
             {...mdDown && {
               textAlign: 'center',
             }}
@@ -81,13 +82,10 @@ export function LandingPage(props: LandingPageProps) {
             }}
           >
             <Heading
-              sx={{ lineHeight: 1.5, display: 'inline' }}
-              value={<>
-                I’M A <Heading
-                  sx={{ color: (theme) => theme.palette.primary.main, lineHeight: 'inherit', display: 'inline' }}
-                  value={'CREATIVE DEVELOPER WEB DESIGNER'}
-                />
-              </>}
+              sx={{ color: (theme) => theme.palette.primary.main, display: 'inline', lineHeight: '104px' }}
+              fontSize={80}
+              fontWeight={900}
+              value={'CREATIVE DEVELOPER WEB DESIGNER'}
             />
           </Margin>
           <Margin
@@ -96,6 +94,11 @@ export function LandingPage(props: LandingPageProps) {
             <Typography
               {...mdDown && {
                 textAlign: 'center',
+              }}
+              sx={{
+                fontSize: '22px',
+                fontWeight: '400',
+                lineHeight: '32px'
               }}
             >
               Frontend developer, UX architect and Javascript engineer, Photochromic Lens enthusiast, practicing minimalist, and Pop Music & Jazz lover in search of flow.
