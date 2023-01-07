@@ -1,8 +1,6 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { Helmet } from "react-helmet";
-import { darkTheme } from '@showoff/design.theme.dark-theme';
-import { lightTheme } from '@showoff/design.theme.light-theme';
 import { SettingsProvider, SettingsConsumer } from '@showoff/personal-portfolio.contexts.settings-context';
 import { Main } from '@showoff/personal-portfolio.layouts.main';
 import { AboutPage } from '@showoff/personal-portfolio.pages.about-page';
@@ -11,9 +9,11 @@ import { LandingPage } from '@showoff/personal-portfolio.pages.landing-page';
 import { ProjectsPage } from '@showoff/personal-portfolio.pages.projects-page';
 import { ThemeProvider } from '@showoff/design.theme.theme-provider';
 import { ContactPage } from '@showoff/contact-me.pages.contact-page';
+import { darkPortfolioTheme } from '@showoff/personal-portfolio.theme.dark-portfolio-theme';
+import { lightPortfolioTheme } from '@showoff/personal-portfolio.theme.light-portfolio-theme';
 
-const dark = darkTheme();
-const light = lightTheme();
+const dark = darkPortfolioTheme();
+const light = lightPortfolioTheme();
 
 export function PortfolioApp() {
   return (
@@ -39,7 +39,7 @@ export function PortfolioApp() {
             </ThemeProvider>
           )}
         </SettingsConsumer>
-      </SettingsProvider >
+      </SettingsProvider>
     </>
   );
 }

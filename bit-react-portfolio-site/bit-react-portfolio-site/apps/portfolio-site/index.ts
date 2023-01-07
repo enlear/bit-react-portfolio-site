@@ -1,1 +1,0 @@
-export { PortfolioSiteApp } from './app';

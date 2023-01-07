@@ -1,1 +1,0 @@
-export { getCircularXXFontFace } from './fonts';

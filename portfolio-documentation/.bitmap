@@ -177,11 +177,49 @@
         "mainFile": "index.ts",
         "rootDir": "personal-portfolio/pages/projects-page"
     },
+    "theme/base-theme": {
+        "scope": "",
+        "version": "",
+        "mainFile": "index.ts",
+        "rootDir": "design/theme/base-theme",
+        "config": {
+            "teambit.harmony/node": {},
+            "teambit.envs/envs": {
+                "env": "teambit.harmony/node"
+            }
+        }
+    },
+    "theme/dark-portfolio-theme": {
+        "scope": "",
+        "version": "",
+        "defaultScope": "showoff.personal-portfolio",
+        "mainFile": "index.ts",
+        "rootDir": "personal-portfolio/theme/dark-portfolio-theme",
+        "config": {
+            "teambit.harmony/node": {},
+            "teambit.envs/envs": {
+                "env": "teambit.harmony/node"
+            }
+        }
+    },
     "theme/dark-theme": {
         "scope": "showoff.design",
         "version": "0.0.12",
         "mainFile": "index.ts",
         "rootDir": "design/theme/dark-theme"
+    },
+    "theme/light-portfolio-theme": {
+        "scope": "",
+        "version": "",
+        "defaultScope": "showoff.personal-portfolio",
+        "mainFile": "index.ts",
+        "rootDir": "personal-portfolio/theme/light-portfolio-theme",
+        "config": {
+            "teambit.harmony/node": {},
+            "teambit.envs/envs": {
+                "env": "teambit.harmony/node"
+            }
+        }
     },
     "theme/light-theme": {
         "scope": "showoff.design",
