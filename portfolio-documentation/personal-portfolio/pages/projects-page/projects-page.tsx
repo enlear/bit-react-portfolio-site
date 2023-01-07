@@ -15,7 +15,10 @@ export function ProjectsPage({ crumbs = [{ crumb: 'projects.' }] }: ProjectsPage
       <Margin
         mt={MarginType.LARGE}
       >
-        <ProjectsList />
+        <ProjectsList
+          view='list'
+          withFilter
+        />
       </Margin>
     </>
   );

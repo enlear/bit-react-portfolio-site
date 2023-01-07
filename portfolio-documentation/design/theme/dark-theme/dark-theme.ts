@@ -61,6 +61,24 @@ export function darkTheme(additionalConfigurations?: ThemeOptions): Theme {
           },
         },
       },
+      MuiSwitch: {
+        styleOverrides: {
+          switchBase: {
+            // Controls default (unchecked) color for the thumb
+            color: "#ccc"
+          },
+          track: {
+            // Controls default (unchecked) color for the track
+            opacity: 0.2,
+            backgroundColor: "#fff",
+            "$checked$checked + &": {
+              // Controls checked color for the track
+              opacity: 0.7,
+              backgroundColor: "#fff"
+            }
+          }
+        }
+      },
       MuiChip: {
         styleOverrides: {
           root: {

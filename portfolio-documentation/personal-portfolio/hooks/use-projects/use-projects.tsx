@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
-import { Project } from '@showoff/personal-portfolio.entities.project';
+import { Project, ProjectKind } from '@showoff/personal-portfolio.entities.project';
 import { sampleProjects } from '@showoff/personal-portfolio.mocks.sample-projects';
 
-export function useProjects(max?: number | undefined) {
+export function useProjects(max?: number | undefined, type?: ProjectKind | undefined) {
   const [projects, setProjects] = useState<Project[]>([]);
   const [loading, setLoading] = useState<boolean>(false);
 
@@ -10,15 +10,16 @@ export function useProjects(max?: number | undefined) {
     const loadProjects = async () => {
       setLoading(true);
       const projectList = sampleProjects();
+      const filteredProjects = type ? projectList.filter((project) => project.type === type) : projectList;
       if (max) {
-        setProjects(projectList.slice(0, max));
+        setProjects(filteredProjects.slice(0, max));
       } else {
-        setProjects(projectList);
+        setProjects(filteredProjects);
       }
       setLoading(false);
     };
     loadProjects();
-  }, []);
+  }, [type]);
 
   return { projects, loading };
 }
