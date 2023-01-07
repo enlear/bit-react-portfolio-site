@@ -26,8 +26,8 @@ export function Picture({ pictureUrl, sx, ...rest }: PictureProps) {
         <img
           src={pictureUrl}
           style={{
-            width: smDown ? 275 : 375,
-            height: smDown ? 275 : 400,
+            width: smDown ? 275 : 525,
+            height: smDown ? 275 : 550,
           }}
         />
       </Box>
@@ -36,11 +36,11 @@ export function Picture({ pictureUrl, sx, ...rest }: PictureProps) {
         top: 0,
         bottom: 0,
         right: 0,
-        left: smDown ? -275 : -340,
+        left: smDown ? -275 : -520,
       }}>
         <Artwork
-          height={smDown ? 375 : 500}
-          width={smDown ? 350 : 500}
+          height={smDown ? 375 : 670}
+          width={smDown ? 350 : 700}
         />
       </Box>
     </Box>
