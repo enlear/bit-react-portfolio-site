@@ -11,7 +11,7 @@ export function darkTheme(additionalConfigurations?: ThemeOptions): Theme {
   return themeCreator({
     palette: {
       primary: {
-        main: '#CBF382',
+        main: '#000',
       },
       text: {
         primary: '#E6E6E8',
