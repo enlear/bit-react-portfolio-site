@@ -12,7 +12,7 @@ import { ContactPage } from '@showoff/contact-me.pages.contact-page';
 import { darkPortfolioTheme } from '@showoff/personal-portfolio.theme.dark-portfolio-theme';
 import { lightPortfolioTheme } from '@showoff/personal-portfolio.theme.light-portfolio-theme';
 
-const dark = darkPortfolioTheme();
+const dark = darkPortfolioTheme({ palette: { primary: { main: '#CBF382' } } });
 const light = lightPortfolioTheme();
 
 export function PortfolioApp() {
