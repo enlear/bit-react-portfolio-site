@@ -20,27 +20,27 @@ export function Picture({ pictureUrl, sx, ...rest }: PictureProps) {
     >
       <Box sx={{
         position: 'relative',
-        top: 30,
+        top: 0,
         left: smDown ? '13%' : '20%',
       }}>
         <img
           src={pictureUrl}
           style={{
-            width: smDown ? 275 : 525,
-            height: smDown ? 275 : 550,
+            width: smDown ? 275 : 475,
+            height: smDown ? 275 : 500,
           }}
         />
       </Box>
       <Box sx={{
         position: 'relative',
-        top: 0,
+        top: -30,
         bottom: 0,
         right: 0,
-        left: smDown ? -275 : -520,
+        left: smDown ? -275 : -475,
       }}>
         <Artwork
-          height={smDown ? 375 : 670}
-          width={smDown ? 350 : 700}
+          height={smDown ? 375 : 620}
+          width={smDown ? 350 : 650}
         />
       </Box>
     </Box>

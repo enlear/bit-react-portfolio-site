@@ -11,7 +11,7 @@
 {
     "apps/portfolio": {
         "scope": "showoff.personal-portfolio",
-        "version": "0.0.40",
+        "version": "0.0.41",
         "mainFile": "index.ts",
         "rootDir": "personal-portfolio/apps/portfolio"
     },
@@ -149,7 +149,7 @@
     },
     "pages/about-page": {
         "scope": "showoff.personal-portfolio",
-        "version": "0.0.12",
+        "version": "0.0.13",
         "mainFile": "index.ts",
         "rootDir": "personal-portfolio/pages/about-page"
     },
@@ -167,7 +167,7 @@
     },
     "pages/landing-page": {
         "scope": "showoff.personal-portfolio",
-        "version": "0.0.15",
+        "version": "0.0.16",
         "mainFile": "index.ts",
         "rootDir": "personal-portfolio/pages/landing-page"
     },
@@ -269,7 +269,7 @@
     },
     "ui/person/picture": {
         "scope": "showoff.personal-portfolio",
-        "version": "0.0.16",
+        "version": "0.0.17",
         "mainFile": "index.ts",
         "rootDir": "personal-portfolio/ui/person/picture"
     },
