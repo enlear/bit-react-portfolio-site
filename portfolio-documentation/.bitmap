@@ -11,7 +11,7 @@
 {
     "apps/portfolio": {
         "scope": "showoff.personal-portfolio",
-        "version": "0.0.37",
+        "version": "0.0.38",
         "mainFile": "index.ts",
         "rootDir": "personal-portfolio/apps/portfolio"
     },
@@ -167,7 +167,7 @@
     },
     "pages/landing-page": {
         "scope": "showoff.personal-portfolio",
-        "version": "0.0.12",
+        "version": "0.0.13",
         "mainFile": "index.ts",
         "rootDir": "personal-portfolio/pages/landing-page"
     },
