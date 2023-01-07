@@ -40,13 +40,15 @@ export function Main({ children }: MainProps) {
           {children}
         </main>
       </Container>
-      <Container
-        maxWidth="lg"
-      >
-        <Box sx={{ pt: 10 }}>
-          <Appfooter />
-        </Box>
-      </Container>
+      <div style={{ marginTop: 'auto' }}>
+        <Container
+          maxWidth="lg"
+        >
+          <Box sx={{ pt: 10 }}>
+            <Appfooter />
+          </Box>
+        </Container>
+      </div>
     </MainRoot>
   );
 }
