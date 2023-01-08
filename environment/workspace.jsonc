@@ -27,7 +27,7 @@
     /**
      * default scope for all components in workspace.
      **/
-    "defaultScope": "my-scope"
+    "defaultScope": "showoff.design"
   },
   /**
    * main configuration for component dependency resolution.
