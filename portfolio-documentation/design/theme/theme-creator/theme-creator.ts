@@ -1,6 +1,6 @@
 import { Theme } from "@mui/material";
 import { ThemeOptions } from "@mui/material";
-import { createTheme } from "@mui/material";
+import { createTheme } from '@mui/material/styles';
 
 /**
  * Create a theme with the specified options.

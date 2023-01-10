@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { Helmet } from "react-helmet";
 import { SettingsProvider, SettingsConsumer } from '@showoff/personal-portfolio.contexts.settings-context';
@@ -12,10 +12,11 @@ import { ContactPage } from '@showoff/contact-me.pages.contact-page';
 import { darkPortfolioTheme } from '@showoff/personal-portfolio.theme.dark-portfolio-theme';
 import { lightPortfolioTheme } from '@showoff/personal-portfolio.theme.light-portfolio-theme';
 
-const dark = darkPortfolioTheme({ palette: { primary: { main: '#CBF382' } } });
-const light = lightPortfolioTheme();
-
 export function PortfolioApp() {
+
+  const dark = useMemo(() => darkPortfolioTheme({ palette: { primary: { main: '#CBF382' } } }), []);
+  const light = useMemo(() => lightPortfolioTheme(), []);
+
   return (
     <>
       <Helmet>
