@@ -10,7 +10,7 @@
     /**
      * the name of the component workspace. used for development purposes.
      **/
-    "name": "my-workspace-name",
+    "name": "environment-workspace",
     /**
      * set the icon to be shown on the Bit server.
      **/
@@ -27,7 +27,7 @@
     /**
      * default scope for all components in workspace.
      **/
-    "defaultScope": "my-scope"
+    "defaultScope": "showoff.design"
   },
   /**
    * main configuration for component dependency resolution.
@@ -38,9 +38,24 @@
      */
     "packageManager": "teambit.dependencies/pnpm",
     "policy": {
-      "dependencies": {},
+      "dependencies": {
+        "@teambit/defender.eslint-linter": "0.0.5",
+        "@teambit/defender.jest-tester": "0.0.6",
+        "@teambit/defender.prettier-formatter": "0.0.4",
+        "@teambit/docs.docs-template": "0.0.8",
+        "@teambit/mdx.ui.mdx-scope-context": "0.0.496",
+        "@teambit/preview.react-preview": "0.0.11",
+        "@teambit/react.mounter": "0.0.8",
+        "@teambit/react.react-env": "0.0.25",
+        "@teambit/typescript.typescript-compiler": "0.0.4",
+        "@types/eslint": "7.28.0",
+        "eslint": "7.32.0",
+        "typescript": "4.9.3"
+      },
       "peerDependencies": {}
-    }
+    },
+    "linkCoreAspects": true,
+    "rootComponents": true
   },
   /**
    * workspace variants allow to set different subsets of configuration for components in your

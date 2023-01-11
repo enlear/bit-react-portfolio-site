@@ -9,5 +9,43 @@
  */
 
 {
+    "envs/react-env": {
+        "scope": "",
+        "version": "",
+        "defaultScope": "showoff.dev",
+        "mainFile": "index.ts",
+        "rootDir": "dev/envs/react-env",
+        "config": {
+            "teambit.dependencies/dependency-resolver": {
+                "policy": {
+                    "dependencies": {
+                        "eslint-plugin-import": "2.22.1",
+                        "eslint-plugin-jest": "24.1.5",
+                        "eslint-plugin-jsx-a11y": "6.4.1",
+                        "eslint-plugin-mdx": "1.13.0",
+                        "eslint-plugin-react": "7.22.0",
+                        "eslint-plugin-react-hooks": "4.2.0"
+                    }
+                }
+            },
+            "teambit.envs/envs": {
+                "env": "teambit.envs/env"
+            },
+            "teambit.envs/env": {},
+            "teambit.harmony/application": {},
+            "teambit.component/dev-files": {},
+            "teambit.compositions/compositions": {},
+            "teambit.docs/docs": {},
+            "teambit.preview/preview": {},
+            "teambit.pipelines/builder": {},
+            "teambit.component/forking": {
+                "forkedFrom": {
+                    "scope": "teambit.react",
+                    "name": "examples/my-react-env",
+                    "version": "0.0.21"
+                }
+            }
+        }
+    },
     "$schema-version": "15.0.0"
 }
