@@ -2,11 +2,17 @@ import { ProjectKind, ProjectType } from "./project.type";
 
 export class Project {
   private _id: string;
+
   private _name: string;
+
   private _description: string;
+
   private _tags: string[];
+
   private _image: string;
+
   private _type: ProjectKind;
+
   private _links: { [key: string]: string }
 
   constructor(project: ProjectType) {

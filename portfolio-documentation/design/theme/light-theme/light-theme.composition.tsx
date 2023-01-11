@@ -1,7 +1,7 @@
 import React from 'react';
-import { Button } from '@mui/material';
+import { Button , ThemeProvider } from '@mui/material';
 import { lightTheme } from './light-theme';
-import { ThemeProvider } from '@mui/material';
+
 
 export function LightTheme() {
   return (

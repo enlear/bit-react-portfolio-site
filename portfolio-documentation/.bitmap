@@ -19,31 +19,97 @@
         "scope": "showoff.design",
         "version": "0.0.20",
         "mainFile": "index.ts",
-        "rootDir": "design/brand/logo"
+        "rootDir": "design/brand/logo",
+        "config": {
+            "teambit.react/react": "-",
+            "teambit.envs/envs": {
+                "env": "showoff.dev/envs/react-env"
+            },
+            "showoff.dev/envs/react-env": {}
+        }
     },
     "contexts/settings-context": {
         "scope": "showoff.personal-portfolio",
         "version": "0.0.19",
         "mainFile": "index.ts",
-        "rootDir": "personal-portfolio/contexts/settings-context"
+        "rootDir": "personal-portfolio/contexts/settings-context",
+        "config": {
+            "teambit.react/react": "-",
+            "teambit.envs/envs": {
+                "env": "showoff.dev/envs/react-env"
+            },
+            "showoff.dev/envs/react-env": {}
+        }
     },
     "elements/card": {
         "scope": "showoff.design",
         "version": "0.0.10",
         "mainFile": "index.ts",
-        "rootDir": "design/elements/card"
+        "rootDir": "design/elements/card",
+        "config": {
+            "teambit.react/react": "-",
+            "teambit.envs/envs": {
+                "env": "showoff.dev/envs/react-env"
+            },
+            "showoff.dev/envs/react-env": {}
+        }
     },
     "elements/chip": {
         "scope": "showoff.design",
         "version": "0.0.10",
         "mainFile": "index.ts",
-        "rootDir": "design/elements/chip"
+        "rootDir": "design/elements/chip",
+        "config": {
+            "teambit.react/react": "-",
+            "teambit.envs/envs": {
+                "env": "showoff.dev/envs/react-env"
+            },
+            "showoff.dev/envs/react-env": {}
+        }
     },
     "entities/project": {
         "scope": "showoff.personal-portfolio",
         "version": "0.0.3",
         "mainFile": "index.ts",
         "rootDir": "personal-portfolio/entities/project"
+    },
+    "envs/react-env": {
+        "scope": "",
+        "version": "",
+        "defaultScope": "showoff.dev",
+        "mainFile": "index.ts",
+        "rootDir": "dev/envs/react-env",
+        "config": {
+            "teambit.dependencies/dependency-resolver": {
+                "policy": {
+                    "dependencies": {
+                        "eslint-plugin-import": "2.22.1",
+                        "eslint-plugin-jest": "24.1.5",
+                        "eslint-plugin-jsx-a11y": "6.4.1",
+                        "eslint-plugin-mdx": "1.13.0",
+                        "eslint-plugin-react": "7.22.0",
+                        "eslint-plugin-react-hooks": "4.2.0"
+                    }
+                }
+            },
+            "teambit.envs/envs": {
+                "env": "teambit.envs/env"
+            },
+            "teambit.envs/env": {},
+            "teambit.harmony/application": {},
+            "teambit.component/dev-files": {},
+            "teambit.compositions/compositions": {},
+            "teambit.docs/docs": {},
+            "teambit.preview/preview": {},
+            "teambit.pipelines/builder": {},
+            "teambit.component/forking": {
+                "forkedFrom": {
+                    "scope": "teambit.react",
+                    "name": "examples/my-react-env",
+                    "version": "0.0.21"
+                }
+            }
+        }
     },
     "fonts/ciruclar-xx": {
         "scope": "showoff.design",
@@ -61,43 +127,92 @@
         "scope": "showoff.personal-portfolio",
         "version": "0.0.3",
         "mainFile": "index.ts",
-        "rootDir": "personal-portfolio/hooks/use-project"
+        "rootDir": "personal-portfolio/hooks/use-project",
+        "config": {
+            "teambit.react/react": "-",
+            "teambit.envs/envs": {
+                "env": "showoff.dev/envs/react-env"
+            },
+            "showoff.dev/envs/react-env": {}
+        }
     },
     "hooks/use-projects": {
         "scope": "showoff.personal-portfolio",
         "version": "0.0.7",
         "mainFile": "index.ts",
-        "rootDir": "personal-portfolio/hooks/use-projects"
+        "rootDir": "personal-portfolio/hooks/use-projects",
+        "config": {
+            "teambit.react/react": "-",
+            "teambit.envs/envs": {
+                "env": "showoff.dev/envs/react-env"
+            },
+            "showoff.dev/envs/react-env": {}
+        }
     },
     "inputs/button": {
         "scope": "showoff.design",
         "version": "0.0.10",
         "mainFile": "index.ts",
-        "rootDir": "design/inputs/button"
+        "rootDir": "design/inputs/button",
+        "config": {
+            "teambit.react/react": "-",
+            "teambit.envs/envs": {
+                "env": "showoff.dev/envs/react-env"
+            },
+            "showoff.dev/envs/react-env": {}
+        }
     },
     "inputs/text-field": {
         "scope": "showoff.design",
         "version": "0.0.19",
         "mainFile": "index.ts",
-        "rootDir": "design/inputs/text-field"
+        "rootDir": "design/inputs/text-field",
+        "config": {
+            "teambit.react/react": "-",
+            "teambit.envs/envs": {
+                "env": "showoff.dev/envs/react-env"
+            },
+            "showoff.dev/envs/react-env": {}
+        }
     },
     "inputs/toggle-button": {
         "scope": "showoff.design",
         "version": "0.0.16",
         "mainFile": "index.ts",
-        "rootDir": "design/inputs/toggle-button"
+        "rootDir": "design/inputs/toggle-button",
+        "config": {
+            "teambit.react/react": "-",
+            "teambit.envs/envs": {
+                "env": "showoff.dev/envs/react-env"
+            },
+            "showoff.dev/envs/react-env": {}
+        }
     },
     "layouts/main": {
         "scope": "showoff.personal-portfolio",
         "version": "0.0.26",
         "mainFile": "index.ts",
-        "rootDir": "personal-portfolio/layouts/main"
+        "rootDir": "personal-portfolio/layouts/main",
+        "config": {
+            "teambit.react/react": "-",
+            "teambit.envs/envs": {
+                "env": "showoff.dev/envs/react-env"
+            },
+            "showoff.dev/envs/react-env": {}
+        }
     },
     "layouts/margin": {
         "scope": "showoff.design",
         "version": "0.0.6",
         "mainFile": "index.ts",
-        "rootDir": "design/layouts/margin"
+        "rootDir": "design/layouts/margin",
+        "config": {
+            "teambit.react/react": "-",
+            "teambit.envs/envs": {
+                "env": "showoff.dev/envs/react-env"
+            },
+            "showoff.dev/envs/react-env": {}
+        }
     },
     "mocks/sample-projects": {
         "scope": "showoff.personal-portfolio",
@@ -109,73 +224,157 @@
         "scope": "showoff.personal-portfolio",
         "version": "0.0.24",
         "mainFile": "index.ts",
-        "rootDir": "personal-portfolio/navigation/appbar"
+        "rootDir": "personal-portfolio/navigation/appbar",
+        "config": {
+            "teambit.react/react": "-",
+            "teambit.envs/envs": {
+                "env": "showoff.dev/envs/react-env"
+            },
+            "showoff.dev/envs/react-env": {}
+        }
     },
     "navigation/appfooter": {
         "scope": "showoff.personal-portfolio",
         "version": "0.0.15",
         "mainFile": "index.ts",
-        "rootDir": "personal-portfolio/navigation/appfooter"
+        "rootDir": "personal-portfolio/navigation/appfooter",
+        "config": {
+            "teambit.react/react": "-",
+            "teambit.envs/envs": {
+                "env": "showoff.dev/envs/react-env"
+            },
+            "showoff.dev/envs/react-env": {}
+        }
     },
     "navigation/breadcrumb": {
         "scope": "showoff.design",
         "version": "0.0.10",
         "mainFile": "index.ts",
-        "rootDir": "design/navigation/breadcrumb"
+        "rootDir": "design/navigation/breadcrumb",
+        "config": {
+            "teambit.react/react": "-",
+            "teambit.envs/envs": {
+                "env": "showoff.dev/envs/react-env"
+            },
+            "showoff.dev/envs/react-env": {}
+        }
     },
     "navigation/footer": {
         "scope": "showoff.design",
         "version": "0.0.16",
         "mainFile": "index.ts",
-        "rootDir": "design/navigation/footer"
+        "rootDir": "design/navigation/footer",
+        "config": {
+            "teambit.react/react": "-",
+            "teambit.envs/envs": {
+                "env": "showoff.dev/envs/react-env"
+            },
+            "showoff.dev/envs/react-env": {}
+        }
     },
     "navigation/header": {
         "scope": "showoff.design",
         "version": "0.0.16",
         "mainFile": "index.ts",
-        "rootDir": "design/navigation/header"
+        "rootDir": "design/navigation/header",
+        "config": {
+            "teambit.react/react": "-",
+            "teambit.envs/envs": {
+                "env": "showoff.dev/envs/react-env"
+            },
+            "showoff.dev/envs/react-env": {}
+        }
     },
     "navigation/link": {
         "scope": "showoff.design",
         "version": "0.0.2",
         "mainFile": "index.ts",
-        "rootDir": "design/navigation/link"
+        "rootDir": "design/navigation/link",
+        "config": {
+            "teambit.react/react": "-",
+            "teambit.envs/envs": {
+                "env": "showoff.dev/envs/react-env"
+            },
+            "showoff.dev/envs/react-env": {}
+        }
     },
     "navigation/link-text": {
         "scope": "showoff.design",
         "version": "0.0.17",
         "mainFile": "index.ts",
-        "rootDir": "design/navigation/link-text"
+        "rootDir": "design/navigation/link-text",
+        "config": {
+            "teambit.react/react": "-",
+            "teambit.envs/envs": {
+                "env": "showoff.dev/envs/react-env"
+            },
+            "showoff.dev/envs/react-env": {}
+        }
     },
     "pages/about-page": {
         "scope": "showoff.personal-portfolio",
         "version": "0.0.16",
         "mainFile": "index.ts",
-        "rootDir": "personal-portfolio/pages/about-page"
+        "rootDir": "personal-portfolio/pages/about-page",
+        "config": {
+            "teambit.react/react": "-",
+            "teambit.envs/envs": {
+                "env": "showoff.dev/envs/react-env"
+            },
+            "showoff.dev/envs/react-env": {}
+        }
     },
     "pages/contact-page": {
         "scope": "showoff.contact-me",
         "version": "0.0.14",
         "mainFile": "index.ts",
-        "rootDir": "contact-me/pages/contact-page"
+        "rootDir": "contact-me/pages/contact-page",
+        "config": {
+            "teambit.react/react": "-",
+            "teambit.envs/envs": {
+                "env": "showoff.dev/envs/react-env"
+            },
+            "showoff.dev/envs/react-env": {}
+        }
     },
     "pages/individual-project-page": {
         "scope": "showoff.personal-portfolio",
         "version": "0.0.14",
         "mainFile": "index.ts",
-        "rootDir": "personal-portfolio/pages/individual-project-page"
+        "rootDir": "personal-portfolio/pages/individual-project-page",
+        "config": {
+            "teambit.react/react": "-",
+            "teambit.envs/envs": {
+                "env": "showoff.dev/envs/react-env"
+            },
+            "showoff.dev/envs/react-env": {}
+        }
     },
     "pages/landing-page": {
         "scope": "showoff.personal-portfolio",
         "version": "0.0.19",
         "mainFile": "index.ts",
-        "rootDir": "personal-portfolio/pages/landing-page"
+        "rootDir": "personal-portfolio/pages/landing-page",
+        "config": {
+            "teambit.react/react": "-",
+            "teambit.envs/envs": {
+                "env": "showoff.dev/envs/react-env"
+            },
+            "showoff.dev/envs/react-env": {}
+        }
     },
     "pages/projects-page": {
         "scope": "showoff.personal-portfolio",
         "version": "0.0.17",
         "mainFile": "index.ts",
-        "rootDir": "personal-portfolio/pages/projects-page"
+        "rootDir": "personal-portfolio/pages/projects-page",
+        "config": {
+            "teambit.react/react": "-",
+            "teambit.envs/envs": {
+                "env": "showoff.dev/envs/react-env"
+            },
+            "showoff.dev/envs/react-env": {}
+        }
     },
     "theme/base-theme": {
         "scope": "showoff.design",
@@ -217,85 +416,183 @@
         "scope": "showoff.design",
         "version": "0.0.12",
         "mainFile": "index.ts",
-        "rootDir": "design/theme/theme-provider"
+        "rootDir": "design/theme/theme-provider",
+        "config": {
+            "teambit.react/react": "-",
+            "teambit.envs/envs": {
+                "env": "showoff.dev/envs/react-env"
+            },
+            "showoff.dev/envs/react-env": {}
+        }
     },
     "theme/theme-toggle": {
         "scope": "showoff.design",
         "version": "0.0.13",
         "mainFile": "index.ts",
-        "rootDir": "design/theme/theme-toggle"
+        "rootDir": "design/theme/theme-toggle",
+        "config": {
+            "teambit.react/react": "-",
+            "teambit.envs/envs": {
+                "env": "showoff.dev/envs/react-env"
+            },
+            "showoff.dev/envs/react-env": {}
+        }
     },
     "typography/heading": {
         "scope": "showoff.design",
         "version": "0.0.8",
         "mainFile": "index.ts",
-        "rootDir": "design/typography/heading"
+        "rootDir": "design/typography/heading",
+        "config": {
+            "teambit.react/react": "-",
+            "teambit.envs/envs": {
+                "env": "showoff.dev/envs/react-env"
+            },
+            "showoff.dev/envs/react-env": {}
+        }
     },
     "typography/typography": {
         "scope": "showoff.design",
         "version": "0.0.8",
         "mainFile": "index.ts",
-        "rootDir": "design/typography/typography"
+        "rootDir": "design/typography/typography",
+        "config": {
+            "teambit.react/react": "-",
+            "teambit.envs/envs": {
+                "env": "showoff.dev/envs/react-env"
+            },
+            "showoff.dev/envs/react-env": {}
+        }
     },
     "ui/about/history": {
         "scope": "showoff.personal-portfolio",
         "version": "0.0.21",
         "mainFile": "index.ts",
-        "rootDir": "personal-portfolio/ui/about/history"
+        "rootDir": "personal-portfolio/ui/about/history",
+        "config": {
+            "teambit.react/react": "-",
+            "teambit.envs/envs": {
+                "env": "showoff.dev/envs/react-env"
+            },
+            "showoff.dev/envs/react-env": {}
+        }
     },
     "ui/artwork": {
         "scope": "showoff.contact-me",
         "version": "0.0.19",
         "mainFile": "index.ts",
-        "rootDir": "contact-me/ui/artwork"
+        "rootDir": "contact-me/ui/artwork",
+        "config": {
+            "teambit.react/react": "-",
+            "teambit.envs/envs": {
+                "env": "showoff.dev/envs/react-env"
+            },
+            "showoff.dev/envs/react-env": {}
+        }
     },
     "ui/contact-form": {
         "scope": "showoff.contact-me",
         "version": "0.0.15",
         "mainFile": "index.ts",
-        "rootDir": "contact-me/ui/contact-form"
+        "rootDir": "contact-me/ui/contact-form",
+        "config": {
+            "teambit.react/react": "-",
+            "teambit.envs/envs": {
+                "env": "showoff.dev/envs/react-env"
+            },
+            "showoff.dev/envs/react-env": {}
+        }
     },
     "ui/person/artwork": {
         "scope": "showoff.personal-portfolio",
         "version": "0.0.20",
         "mainFile": "index.ts",
-        "rootDir": "personal-portfolio/ui/person/artwork"
+        "rootDir": "personal-portfolio/ui/person/artwork",
+        "config": {
+            "teambit.react/react": "-",
+            "teambit.envs/envs": {
+                "env": "showoff.dev/envs/react-env"
+            },
+            "showoff.dev/envs/react-env": {}
+        }
     },
     "ui/person/picture": {
         "scope": "showoff.personal-portfolio",
         "version": "0.0.20",
         "mainFile": "index.ts",
-        "rootDir": "personal-portfolio/ui/person/picture"
+        "rootDir": "personal-portfolio/ui/person/picture",
+        "config": {
+            "teambit.react/react": "-",
+            "teambit.envs/envs": {
+                "env": "showoff.dev/envs/react-env"
+            },
+            "showoff.dev/envs/react-env": {}
+        }
     },
     "ui/projects/projects-list": {
         "scope": "showoff.personal-portfolio",
         "version": "0.0.10",
         "mainFile": "index.ts",
-        "rootDir": "personal-portfolio/ui/projects/projects-list"
+        "rootDir": "personal-portfolio/ui/projects/projects-list",
+        "config": {
+            "teambit.react/react": "-",
+            "teambit.envs/envs": {
+                "env": "showoff.dev/envs/react-env"
+            },
+            "showoff.dev/envs/react-env": {}
+        }
     },
     "ui/social/icons": {
         "scope": "showoff.personal-portfolio",
         "version": "0.0.3",
         "mainFile": "index.ts",
-        "rootDir": "personal-portfolio/ui/social/icons"
+        "rootDir": "personal-portfolio/ui/social/icons",
+        "config": {
+            "teambit.react/react": "-",
+            "teambit.envs/envs": {
+                "env": "showoff.dev/envs/react-env"
+            },
+            "showoff.dev/envs/react-env": {}
+        }
     },
     "widgets/sizeable-box": {
         "scope": "showoff.design",
         "version": "0.0.16",
         "mainFile": "index.ts",
-        "rootDir": "design/widgets/sizeable-box"
+        "rootDir": "design/widgets/sizeable-box",
+        "config": {
+            "teambit.react/react": "-",
+            "teambit.envs/envs": {
+                "env": "showoff.dev/envs/react-env"
+            },
+            "showoff.dev/envs/react-env": {}
+        }
     },
     "widgets/text-icon": {
         "scope": "showoff.design",
         "version": "0.0.13",
         "mainFile": "index.ts",
-        "rootDir": "design/widgets/text-icon"
+        "rootDir": "design/widgets/text-icon",
+        "config": {
+            "teambit.react/react": "-",
+            "teambit.envs/envs": {
+                "env": "showoff.dev/envs/react-env"
+            },
+            "showoff.dev/envs/react-env": {}
+        }
     },
     "widgets/work-item": {
         "scope": "showoff.design",
         "version": "0.0.19",
         "mainFile": "index.ts",
-        "rootDir": "design/widgets/work-item"
+        "rootDir": "design/widgets/work-item",
+        "config": {
+            "teambit.react/react": "-",
+            "teambit.envs/envs": {
+                "env": "showoff.dev/envs/react-env"
+            },
+            "showoff.dev/envs/react-env": {}
+        }
     },
     "$schema-version": "15.0.0"
 }

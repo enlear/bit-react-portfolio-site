@@ -1,6 +1,6 @@
-import { alpha, Theme } from '@mui/material';
+import { alpha, Theme , ThemeOptions } from '@mui/material';
 import { themeCreator } from '@showoff/design.theme.theme-creator';
-import { ThemeOptions } from '@mui/material';
+
 import { baseTheme } from '@showoff/design.theme.base-theme';
 
 /**

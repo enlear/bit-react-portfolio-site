@@ -1,5 +1,5 @@
-import { Theme } from "@mui/material";
-import { ThemeOptions } from "@mui/material";
+import { Theme , ThemeOptions } from "@mui/material";
+
 import { createTheme } from '@mui/material/styles';
 
 /**
