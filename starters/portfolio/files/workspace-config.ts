@@ -12,14 +12,11 @@ export async function workspaceConfig({
   const configParsed = await getWorkspaceConfigTemplateParsed();
   configParsed['teambit.workspace/workspace'].name = name;
   configParsed['teambit.workspace/workspace'].defaultScope = scope;
-  configParsed[`showoff.personal-portfolio/apps/portfolio`] = {};
+  configParsed['showoff.personal-portfolio/apps/portfolio'] = {};
   configParsed['teambit.dependencies/dependency-resolver'] = {
     policy: {
       dependencies: {
-        '@babel/core': "^7.21.0",
-        '@babel/runtime': "^7.21.0",
         '@teambit/cloud-providers.deployers.netlify': "0.1.7",
-        '@teambit/react.react-env': "^0.0.42",
         'core-js': "^3.29.0",
         'lodash': "^4.17.21",
         'cheerio': "1.0.0-rc.12",

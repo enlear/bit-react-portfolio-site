@@ -10,6 +10,9 @@ import { Project } from "@showoff/personal-portfolio.entities.project";
 
 const PERSON_IMAGE = "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80";
 
+
+export const CONTACT_ME_API_URL = "";
+
 export const USER_PROFILE = {
   name: "Tobias Sundberg",
   bio: "Frontend developer, UX architect and Javascript engineer, Photochromic Lens enthusiast, practicing minimalist, and Pop Music & Jazz lover in search of flow.",

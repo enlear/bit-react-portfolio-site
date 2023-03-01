@@ -4,7 +4,7 @@ import { BasicMain } from './main.composition';
 
 it('should render footer with correct text', () => {
   const { getByText } = render(<BasicMain />);
-  const rendered = getByText('© 2022 Ober. All Rights Reserved.');
+  const rendered = getByText(`© ${new Date().getFullYear()} Ober. All Rights Reserved.`);
   expect(rendered).toBeTruthy();
 });
 
