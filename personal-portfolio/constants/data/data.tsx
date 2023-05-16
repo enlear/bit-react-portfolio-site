@@ -110,11 +110,7 @@ export const PROJECTS: Project[] = [
 ];
 
 export const HEADER_LINKS: HeaderProps = {
-  logo: <Link
-    to="/"
-  >
-    <Logo />
-  </Link>,
+  logo: <Logo />,
   navLinks: [
     { label: 'Projects', url: '/projects' },
     { label: 'Contact', url: '/contact' },

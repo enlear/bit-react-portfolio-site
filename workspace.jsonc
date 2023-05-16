@@ -48,7 +48,7 @@
         "@mui/icons-material": "5.11.11",
         "@mui/lab": "5.0.0-alpha.121",
         "@mui/material": "5.11.11",
-        "@teambit/cloud-providers.deployers.netlify": "0.1.13",
+        "@teambit/cloud-providers.deployers.netlify": "^0.1.19",
         "@teambit/component-descriptor": "0.0.240",
         "@teambit/docs.docs-template": "0.0.9",
         "@teambit/mdx.ui.mdx-scope-context": "0.0.498",
@@ -93,5 +93,6 @@
        **/
       // "teambit.react/react": { }
     }
-  }
+  },
+  "showoff.personal-portfolio/apps/portfolio": {}
 }

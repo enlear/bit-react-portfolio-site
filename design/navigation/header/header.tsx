@@ -26,7 +26,7 @@ export function Header({ logo, navLinks = [], themeToggle }: HeaderProps) {
         <Container maxWidth="lg">
           <Box sx={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
             <Box sx={{ mt: 0.6 }}>
-              {logo}
+              <Link to="/">{logo}</Link>
             </Box>
             <div>
               <Box sx={{ display: 'flex', gap: 3, alignItems: 'center' }}>
