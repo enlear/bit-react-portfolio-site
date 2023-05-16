@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { Logo } from "@showoff/design.brand.logo";
 import { HeaderProps } from "@showoff/design.navigation.header";
 import { FooterProps } from "@showoff/design.navigation.footer";

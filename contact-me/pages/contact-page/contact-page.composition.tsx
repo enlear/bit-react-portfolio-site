@@ -1,7 +1,6 @@
 import React from 'react';
 import { MemoryRouter } from 'react-router-dom';
 import { Main } from '@showoff/personal-portfolio.layouts.main';
-import { Link } from '@showoff/design.navigation.link';
 import { Logo } from '@showoff/design.brand.logo';
 import { ContactPage } from './contact-page';
 
@@ -9,11 +8,7 @@ export const SampleContactPage = () => (
   <MemoryRouter>
     <Main
       headerProps={{
-        logo: <Link
-          to="/"
-        >
-          <Logo />
-        </Link>,
+        logo: <Logo />,
         navLinks: [
           { label: 'Projects', url: '/projects' },
           { label: 'Contact', url: '/contact' },

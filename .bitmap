@@ -11,7 +11,7 @@
 {
     "apps/portfolio": {
         "scope": "showoff.personal-portfolio",
-        "version": "0.0.82",
+        "version": "0.0.85",
         "mainFile": "index.ts",
         "rootDir": "personal-portfolio/apps/portfolio"
     },

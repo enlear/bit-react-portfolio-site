@@ -6,6 +6,7 @@ import { Preview } from '@teambit/preview';
 
 export class MyReactEnv extends ReactEnv implements ReactEnvInterface {
   name = 'react-with-mui';
+
   icon = 'https://static.bit.dev/extensions-icons/react.svg';
 
   preview(): EnvHandler<Preview> {
