@@ -10,9 +10,8 @@
 
 {
     "api/form-handler": {
-        "scope": "",
+        "scope": "showoff.contact-me",
         "version": "0.0.5",
-        "defaultScope": "showoff.contact-me",
         "mainFile": "index.ts",
         "rootDir": "contact-me/api/form-handler"
     },
@@ -239,9 +238,8 @@
         "rootDir": "starters/portfolio"
     },
     "preview-contexts/mui-preview-context": {
-        "scope": "",
+        "scope": "showoff.dev",
         "version": "0.0.1",
-        "defaultScope": "showoff.dev",
         "mainFile": "index.ts",
         "rootDir": "dev/preview-contexts/mui-preview-context"
     },
