@@ -9,9 +9,16 @@
  */
 
 {
+    "api/form-handler": {
+        "scope": "",
+        "version": "0.0.5",
+        "defaultScope": "showoff.contact-me",
+        "mainFile": "index.ts",
+        "rootDir": "contact-me/api/form-handler"
+    },
     "apps/portfolio": {
         "scope": "showoff.personal-portfolio",
-        "version": "0.0.86",
+        "version": "0.0.97",
         "mainFile": "index.ts",
         "rootDir": "personal-portfolio/apps/portfolio"
     },
@@ -203,7 +210,7 @@
     },
     "pages/contact-page": {
         "scope": "showoff.contact-me",
-        "version": "0.0.35",
+        "version": "0.0.43",
         "mainFile": "index.ts",
         "rootDir": "contact-me/pages/contact-page"
     },
