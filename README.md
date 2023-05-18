@@ -1,5 +1,4 @@
 [![Bit Org Showoff](https://img.shields.io/badge/Bit-@Showoff-2C00C3)](https://bit.cloud/showoff)
-
 [![Scope Design](https://img.shields.io/badge/Scope-Design_(30)-820596)](https://bit.cloud/showoff/design)
 [![Scope Personal Portfolio](https://img.shields.io/badge/Scope-Personal_Portfolio_(22)-820596)](https://bit.cloud/showoff/personal-portfolio)
 [![Scope Contact Me](https://img.shields.io/badge/Scope-Contact_Me_(5)-820596)](https://bit.cloud/showoff/contact-me)
