@@ -23,7 +23,6 @@ Before deploying the application, setup the following environment variables.
 export NETLIFY_AUTH_TOKEN=<Your Netlify Token>
 export AWS_ACCESS_KEY_ID=<Your AWS Access Key ID>
 export AWS_SECRET_ACCESS_KEY=<Your AWS Access Key Secret>
-
 ```
 
 ## Scopes
