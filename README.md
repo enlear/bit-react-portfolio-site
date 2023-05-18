@@ -32,15 +32,3 @@ export NETLIFY_AUTH_TOKEN=<Your Netlify Token>
 export AWS_ACCESS_KEY_ID=<Your AWS Access Key ID>
 export AWS_SECRET_ACCESS_KEY=<Your AWS Access Key Secret>
 ```
-
-## Scopes
-
-Design Scope - https://bit.cloud/showoff/design
-
-Portfolio Scope - https://bit.cloud/showoff/personal-portfolio
-
-Contact Scope - https://bit.cloud/showoff/contact-me
-
-Dev Scope - https://bit.cloud/showoff/dev
-
-Starter Scope - https://bit.cloud/showoff/starters
