@@ -1,10 +1,10 @@
-[![Bit Cloud](https://img.shields.io/badge/Bit-Cloud-2C00C3)](https://bit.cloud/showoff)
+[![Bit Org Showoff](https://img.shields.io/badge/Bit-@Showoff-2C00C3)](https://bit.cloud/showoff)
 
-[![Bit Scope Design](https://img.shields.io/badge/Bit_Scope-Design_(30)-820596)](https://bit.cloud/showoff/design)
-[![Bit Scope Personal Portfolio](https://img.shields.io/badge/Bit_Scope-Personal_Portfolio_(22)-820596)](https://bit.cloud/showoff/personal-portfolio)
-[![Bit Scope Contact Me](https://img.shields.io/badge/Bit_Scope-Contact_Me_(5)-820596)](https://bit.cloud/showoff/contact-me)
-[![Bit Scope Dev](https://img.shields.io/badge/Bit_Scope-Dev_(4)-820596)](https://bit.cloud/showoff/dev)
-[![Bit Scope Starters](https://img.shields.io/badge/Bit_Scope-Starters_(1)-820596)](https://bit.cloud/showoff/starters)
+[![Scope Design](https://img.shields.io/badge/Scope-Design_(30)-820596)](https://bit.cloud/showoff/design)
+[![Scope Personal Portfolio](https://img.shields.io/badge/Scope-Personal_Portfolio_(22)-820596)](https://bit.cloud/showoff/personal-portfolio)
+[![Scope Contact Me](https://img.shields.io/badge/Scope-Contact_Me_(5)-820596)](https://bit.cloud/showoff/contact-me)
+[![Scope Dev](https://img.shields.io/badge/Scope-Dev_(4)-820596)](https://bit.cloud/showoff/dev)
+[![Scope Starters](https://img.shields.io/badge/Scope-Starters_(1)-820596)](https://bit.cloud/showoff/starters)
 
 # Portfolio Template - Bit | React | AWS
 
