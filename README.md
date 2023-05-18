@@ -10,8 +10,8 @@ Currently, it deploys on Netlify. It also uses AWS Lambda as a backend for conta
 - Clone the repository via the `SSH` url
 - Install Bit Version Manager - `npm i -g @teambit/bvm` | `yarn global add @teambit/bvm`
 - Install Bit - `bvm install`
-- Install Project Dependencies - `bit install && bit install`
-- Compile components - `bit compile`
+- Install Project Dependencies - `bit install`
+- Compile components - `bit compile && bit compile`. **Note:** Compile twise to compile the Envs and compile the compoennts using their respective Envs.
 - Update Heap Size to about 4GB - `export NODE_OPTIONS="--max-old-space-size=4096"`
 - Launch Development Server - `bit start`
 
