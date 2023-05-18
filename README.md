@@ -1,7 +1,7 @@
-# Portfolio Template - Bit | React
+# Portfolio Template - Bit | React | AWS
 
 This repository contains a composable frontend application that can serve as a portfolio project designed by React.
-Currently, it deploys on Netlify.
+Currently, it deploys on Netlify. It also uses AWS Lambda as a backend for contact us page.
 
 ## Development Setup
 
