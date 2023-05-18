@@ -1,3 +1,11 @@
+[![Bit Cloud](https://img.shields.io/badge/Bit-Cloud-2C00C3)](https://bit.cloud/showoff)
+
+[![Bit Scope Design](https://img.shields.io/badge/Bit_Scope-Design_(30)-820596)](https://bit.cloud/showoff/design)
+[![Bit Scope Personal Portfolio](https://img.shields.io/badge/Bit_Scope-Personal_Portfolio_(22)-820596)](https://bit.cloud/showoff/personal-portfolio)
+[![Bit Scope Contact Me](https://img.shields.io/badge/Bit_Scope-Contact_Me_(5)-820596)](https://bit.cloud/showoff/contact-me)
+[![Bit Scope Dev](https://img.shields.io/badge/Bit_Scope-Dev_(4)-820596)](https://bit.cloud/showoff/dev)
+[![Bit Scope Starters](https://img.shields.io/badge/Bit_Scope-Starters_(1)-820596)](https://bit.cloud/showoff/starters)
+
 # Portfolio Template - Bit | React | AWS
 
 This repository contains a composable frontend application that can serve as a portfolio project designed by React.
